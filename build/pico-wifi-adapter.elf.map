@@ -71,8 +71,6 @@ Discarded input sections
                 0x0000000000000000       0x34 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
  .text.cdc_task
                 0x0000000000000000       0x30 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
- .text.led_blinking_task
-                0x0000000000000000       0x50 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -611,6 +609,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.__wrap___aeabi_idiv
                 0x0000000000000000       0x50 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .text.__wrap___aeabi_ldiv
+                0x0000000000000000      0x424 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_s64s64_rem
                 0x0000000000000000        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_u64u64_rem
@@ -1019,6 +1019,8 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .time_critical.get_bootsel_button
                 0x0000000000000000       0x60 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+ .text.board_led_write
+                0x0000000000000000        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .text.board_button_read
                 0x0000000000000000       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .text.board_uart_read
@@ -1878,9 +1880,9 @@ Discarded input sections
                 0x0000000000000000        0x8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .bss.lockout_victim_initialized
                 0x0000000000000000        0x2 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccH8GK2d.o
- .data          0x0000000000000000        0x0 /tmp/ccH8GK2d.o
- .bss           0x0000000000000000        0x0 /tmp/ccH8GK2d.o
+ .text          0x0000000000000000        0x0 /tmp/ccP6T9O8.o
+ .data          0x0000000000000000        0x0 /tmp/ccP6T9O8.o
+ .bss           0x0000000000000000        0x0 /tmp/ccP6T9O8.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -2172,11 +2174,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccH8GK2d.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccP6T9O8.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x4798
+.text           0x0000000010000100     0x42a0
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -2238,437 +2240,424 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.startup.main
-                0x0000000010000354      0x1a8 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000010000354      0x13c CMakeFiles/pico-wifi-adapter.dir/main.c.obj
                 0x0000000010000354                main
  .text.tud_mount_cb
-                0x00000000100004fc       0x10 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x00000000100004fc                tud_mount_cb
+                0x0000000010000490        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000010000490                tud_mount_cb
  .text.tud_umount_cb
-                0x000000001000050c        0xc CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x000000001000050c                tud_umount_cb
+                0x0000000010000494        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000010000494                tud_umount_cb
  .text.tud_suspend_cb
-                0x0000000010000518       0x10 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x0000000010000518                tud_suspend_cb
+                0x0000000010000498        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000010000498                tud_suspend_cb
  .text.tud_resume_cb
-                0x0000000010000528       0x20 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x0000000010000528                tud_resume_cb
+                0x000000001000049c        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x000000001000049c                tud_resume_cb
  .text.tud_vendor_control_xfer_cb
-                0x0000000010000548       0xcc CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x0000000010000548                tud_vendor_control_xfer_cb
+                0x00000000100004a0       0xb0 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x00000000100004a0                tud_vendor_control_xfer_cb
  .text.tud_cdc_line_state_cb
-                0x0000000010000614       0x1c CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x0000000010000614                tud_cdc_line_state_cb
+                0x0000000010000550       0x1c CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000010000550                tud_cdc_line_state_cb
  .text.tud_cdc_rx_cb
-                0x0000000010000630        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x0000000010000630                tud_cdc_rx_cb
+                0x000000001000056c        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x000000001000056c                tud_cdc_rx_cb
  .text.tud_cdc_n_connected
-                0x0000000010000634       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000634                tud_cdc_n_connected
+                0x0000000010000570       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010000570                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010000668       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000668                tud_cdc_n_available
+                0x00000000100005a4       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100005a4                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010000688       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000688                tud_cdc_n_read
+                0x00000000100005c4       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100005c4                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010000714       0x78 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000714                tud_cdc_n_write_flush
+                0x0000000010000650       0x78 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010000650                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x000000001000078c       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000078c                tud_cdc_n_write
+                0x00000000100006c8       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100006c8                tud_cdc_n_write
  .text.cdcd_init
-                0x00000000100007d4       0x6c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100007d4                cdcd_init
+                0x0000000010000710       0x6c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010000710                cdcd_init
  .text.cdcd_reset
-                0x0000000010000840       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000840                cdcd_reset
+                0x000000001000077c       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000077c                cdcd_reset
  .text.cdcd_open
-                0x000000001000086c       0xe4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000086c                cdcd_open
+                0x00000000100007a8       0xe4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100007a8                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010000950       0xe4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000950                cdcd_control_xfer_cb
+                0x000000001000088c       0xe4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000088c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010000a34      0x144 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010000a34                cdcd_xfer_cb
+                0x0000000010000970      0x144 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010000970                cdcd_xfer_cb
  .text.tud_descriptor_device_cb
-                0x0000000010000b78        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010000b78                tud_descriptor_device_cb
+                0x0000000010000ab4        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010000ab4                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010000b80        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010000b80                tud_descriptor_configuration_cb
+                0x0000000010000abc        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010000abc                tud_descriptor_configuration_cb
  .text.tud_descriptor_bos_cb
-                0x0000000010000b88        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010000b88                tud_descriptor_bos_cb
+                0x0000000010000ac4        0x8 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010000ac4                tud_descriptor_bos_cb
  .text.tud_descriptor_string_cb
-                0x0000000010000b90      0x154 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010000b90                tud_descriptor_string_cb
+                0x0000000010000acc      0x154 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010000acc                tud_descriptor_string_cb
  .text.running_on_fpga
-                0x0000000010000ce4       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010000ce4                running_on_fpga
+                0x0000000010000c20       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010000c20                running_on_fpga
  .text.hw_claim_or_assert
-                0x0000000010000cf4       0x44 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000cf4                hw_claim_or_assert
+                0x0000000010000c30       0x44 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000c30                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010000d38       0x9c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000d38                hw_claim_unused_from_range
+                0x0000000010000c74       0x9c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000010000c74                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x0000000010000dd4       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000dd4                spin_locks_reset
+                0x0000000010000d10       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000d10                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000df0       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000df0                next_striped_spin_lock_num
+                0x0000000010000d2c       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000d2c                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x0000000010000e08       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000e08                spin_lock_claim_unused
+                0x0000000010000d44       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000d44                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x0000000010000e28       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000e28                irq_set_enabled
+                0x0000000010000d64       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000d64                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x0000000010000e4c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000e4c                irq_get_vtable_handler
+                0x0000000010000d88       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000d88                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010000e5c       0x54 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000e5c                irq_set_exclusive_handler
+                0x0000000010000d98       0x54 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000d98                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010000eb0      0x1e8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000eb0                irq_add_shared_handler
+                0x0000000010000dec      0x1e8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000dec                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010001098      0x1b0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001098                irq_remove_handler
+                0x0000000010000fd4      0x1b0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000fd4                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010001248       0xb4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001248                irq_add_tail_to_free_list
+                0x0000000010001184       0xb4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001184                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x00000000100012fc       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100012fc                irq_init_priorities
+                0x0000000010001238       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001238                irq_init_priorities
  .text.lock_init
-                0x0000000010001320       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010001320                lock_init
+                0x000000001000125c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x000000001000125c                lock_init
  .text.mutex_init
-                0x0000000010001330       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001330                mutex_init
+                0x000000001000126c       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x000000001000126c                mutex_init
  .text.recursive_mutex_init
-                0x000000001000134c       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x000000001000134c                recursive_mutex_init
+                0x0000000010001288       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001288                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001368       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001368                critical_section_init
+                0x00000000100012a4       0x20 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x00000000100012a4                critical_section_init
  .text.timer_pool_entry_comparator
-                0x0000000010001388       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001388                timer_pool_entry_comparator
+                0x00000000100012c4       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100012c4                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x00000000100013bc       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100012f8       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x00000000100013ec      0x100 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001328      0x100 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x00000000100014ec      0x1bc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001428      0x1bc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x00000000100016a8       0x6c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100016a8                alarm_pool_init_default
+                0x00000000100015e4       0x6c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100015e4                alarm_pool_init_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010001714      0x178 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001714                alarm_pool_add_alarm_at
+                0x0000000010001650      0x178 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001650                alarm_pool_add_alarm_at
  .text.best_effort_wfe_or_timeout
-                0x000000001000188c       0xd4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000188c                best_effort_wfe_or_timeout
+                0x00000000100017c8       0xd4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100017c8                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001960       0xbc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000189c       0xbc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001a1c       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001a1c                hardware_alarm_claim
+                0x0000000010001958       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001958                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010001a34       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001a34                time_us_64
+                0x0000000010001970       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001970                time_us_64
  .text.hardware_alarm_set_callback
-                0x0000000010001a48       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001a48                hardware_alarm_set_callback
+                0x0000000010001984       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001984                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001ad4       0xd4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001ad4                hardware_alarm_set_target
+                0x0000000010001a10       0xd4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001a10                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001ba8       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001ba8                hardware_alarm_cancel
+                0x0000000010001ae4       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001ae4                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001be4       0x68 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001b20       0x68 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010001c4c       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001c4c                ph_post_alloc_init
+                0x0000000010001b88       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001b88                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001c88       0x90 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001c88                ph_merge_two_pass
+                0x0000000010001bc4       0x90 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001bc4                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001d18      0x100 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001c54      0x100 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001e18      0x104 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001e18                ph_remove_head
+                0x0000000010001d54      0x104 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001d54                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001f1c       0x7c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001f1c                ph_remove_and_free_node
+                0x0000000010001e58       0x7c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001e58                ph_remove_and_free_node
  .text.clocks_init
-                0x0000000010001f98      0x2d0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001f98                clocks_init
+                0x0000000010001ed4      0x2d0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001ed4                clocks_init
  .text.pll_init
-                0x0000000010002268       0xa0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010002268                pll_init
+                0x00000000100021a4       0xa0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000100021a4                pll_init
  .text.watchdog_start_tick
-                0x0000000010002308       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010002308                watchdog_start_tick
+                0x0000000010002244       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002244                watchdog_start_tick
  .text.xosc_init
-                0x0000000010002318       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010002318                xosc_init
+                0x0000000010002254       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010002254                xosc_init
  .text.runtime_init
-                0x0000000010002340       0xf0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002340                runtime_init
- .text._exit    0x0000000010002430       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002430                _exit
- .text.exit     0x0000000010002444        0x8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002444                exit
- .text.panic    0x000000001000244c       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x000000001000244c                panic
+                0x000000001000227c       0xf0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000227c                runtime_init
+ .text._exit    0x000000001000236c       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000236c                _exit
+ .text.exit     0x0000000010002380        0x8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002380                exit
+ .text.panic    0x0000000010002388       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002388                panic
  .text.hard_assertion_failure
-                0x000000001000247c        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x000000001000247c                hard_assertion_failure
+                0x00000000100023b8        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100023b8                hard_assertion_failure
  .text._out_char
-                0x0000000010002488       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100023c4       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x0000000010002498       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010002498                weak_raw_vprintf
- .text          0x00000000100024c8       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000000100023d4       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100023d4                weak_raw_vprintf
+ .text          0x0000000010002404       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000100024d8       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100024d8                rom_func_lookup
+                0x0000000010002414       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002414                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000100024e8       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100024e8                rom_data_lookup
+                0x0000000010002424       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002424                rom_data_lookup
  .text.rom_funcs_lookup
-                0x00000000100024f8       0x44 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100024f8                rom_funcs_lookup
+                0x0000000010002434       0x44 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010002434                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x000000001000253c       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x000000001000253c                __wrap___aeabi_uidiv
-                0x000000001000253c                __wrap___aeabi_uidivmod
-                0x000000001000253c                div_u32u32
-                0x000000001000253c                divmod_u32u32
-                0x0000000010002544                divmod_u32u32_unsafe
-                0x000000001000256c                divmod_u32u32_savestate
- .text.__wrap___aeabi_ldiv
-                0x0000000010002588      0x424 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010002588                div_s64s64
-                0x0000000010002588                divmod_s64s64
-                0x0000000010002588                __wrap___aeabi_ldivmod
-                0x00000000100025b8                div_u64u64
-                0x00000000100025b8                divmod_u64u64
-                0x00000000100025b8                __wrap___aeabi_uldivmod
-                0x00000000100025c8                divmod_u64u64_savestate
-                0x00000000100025e8                divmod_s64s64_unsafe
-                0x0000000010002670                divmod_u64u64_unsafe
+                0x0000000010002478       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010002478                __wrap___aeabi_uidiv
+                0x0000000010002478                __wrap___aeabi_uidivmod
+                0x0000000010002478                div_u32u32
+                0x0000000010002478                divmod_u32u32
+                0x0000000010002480                divmod_u32u32_unsafe
+                0x00000000100024a8                divmod_u32u32_savestate
  .text.missing_double_func_shim
-                0x00000000100029ac        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000100024c4        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .text.__aeabi_double_init
-                0x00000000100029b8       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000100029b8                __aeabi_double_init
+                0x00000000100024d0       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000100024d0                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010002a50       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010002a50                double_table_shim_on_use_helper
+                0x0000000010002568       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010002568                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x0000000010002a7c       0x32 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010002a7c                __wrap___aeabi_lmul
- *fill*         0x0000000010002aae        0x2 
+                0x0000000010002594       0x32 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010002594                __wrap___aeabi_lmul
+ *fill*         0x00000000100025c6        0x2 
  .text.missing_float_func_shim
-                0x0000000010002ab0        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000100025c8        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .text.__aeabi_float_init
-                0x0000000010002abc       0x5c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010002abc                __aeabi_float_init
- .text          0x0000000010002b18       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010002b18                __aeabi_mem_init
- .text.memset   0x0000000010002b28        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010002b28                __wrap_memset
- .text.memcpy   0x0000000010002b34        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010002b34                __wrap___aeabi_memcpy
-                0x0000000010002b34                __wrap_memcpy
+                0x00000000100025d4       0x5c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000100025d4                __aeabi_float_init
+ .text          0x0000000010002630       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002630                __aeabi_mem_init
+ .text.memset   0x0000000010002640        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002640                __wrap_memset
+ .text.memcpy   0x000000001000264c        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000264c                __wrap___aeabi_memcpy
+                0x000000001000264c                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010002b40       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002658       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010002b50       0xb4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002668       0xb4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010002c04       0xfc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000271c       0xfc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010002d00       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002d00                __wrap_putchar
+                0x0000000010002818       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002818                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010002d98       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002d98                __wrap_puts
+                0x00000000100028b0       0x3c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100028b0                __wrap_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010002dd4       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000100028ec       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id
-                0x0000000010002de4       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010002de4                pico_get_unique_board_id
+                0x00000000100028fc       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000100028fc                pico_get_unique_board_id
  .text.flash_get_unique_id
-                0x0000000010002df4       0x40 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010002df4                flash_get_unique_id
+                0x000000001000290c       0x40 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x000000001000290c                flash_get_unique_id
  .text.board_get_unique_id
-                0x0000000010002e34       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-                0x0000000010002e34                board_get_unique_id
+                0x000000001000294c       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x000000001000294c                board_get_unique_id
  .text.board_init
-                0x0000000010002e58        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-                0x0000000010002e58                board_init
- .text.board_led_write
-                0x0000000010002e5c        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-                0x0000000010002e5c                board_led_write
+                0x0000000010002970        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000000010002970                board_init
  .text.dcd_int_enable
-                0x0000000010002e60        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e60                dcd_int_enable
+                0x0000000010002974        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002974                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010002e6c       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e6c                dcd_set_address
+                0x0000000010002980       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002980                dcd_set_address
  .text.dcd_connect
-                0x0000000010002e80       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e80                dcd_connect
+                0x0000000010002994       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002994                dcd_connect
  .text.dcd_init
-                0x0000000010002e90       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e90                dcd_init
+                0x00000000100029a4       0x98 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100029a4                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010002f28       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002f28                dcd_edpt0_status_complete
+                0x0000000010002a3c       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002a3c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010002f44      0x108 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002f44                dcd_edpt_open
+                0x0000000010002a58      0x108 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002a58                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x000000001000304c        0x8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000304c                dcd_edpt_close_all
+                0x0000000010002b60        0x8 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002b60                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x0000000010003054       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010003054                dcd_edpt_xfer
+                0x0000000010002b68       0x24 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002b68                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010003078       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010003078                dcd_edpt_stall
+                0x0000000010002b8c       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002b8c                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x00000000100030b0       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100030b0                dcd_edpt_clear_stall
+                0x0000000010002bc4       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010002bc4                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x00000000100030e0       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100030e0                rp2040_usb_init
+                0x0000000010002bf4       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010002bf4                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x000000001000312c       0x50 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000312c                hw_endpoint_xfer_start
+                0x0000000010002c40       0x50 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010002c40                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x000000001000317c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000317c                tud_mounted
+                0x0000000010002c90       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010002c90                tud_mounted
  .text.tud_suspended
-                0x000000001000318c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000318c                tud_suspended
+                0x0000000010002ca0       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010002ca0                tud_suspended
  .text.tud_init
-                0x000000001000319c       0xdc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000319c                tud_init
+                0x0000000010002cb0       0xdc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010002cb0                tud_init
  .text.tud_task_ext
-                0x0000000010003278      0x86c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003278                tud_task_ext
+                0x0000000010002d8c      0x86c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010002d8c                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x0000000010003ae4       0x9c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003ae4                usbd_open_edpt_pair
+                0x00000000100035f8       0x9c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100035f8                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x0000000010003b80       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003b80                usbd_edpt_open
+                0x0000000010003694       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003694                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010003bb4       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003bb4                usbd_edpt_claim
+                0x00000000100036c8       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100036c8                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010003bdc       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003bdc                usbd_edpt_release
+                0x00000000100036f0       0x28 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100036f0                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010003c04       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003c04                usbd_edpt_xfer
+                0x0000000010003718       0x4c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010003718                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010003c50       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003c50                tud_control_status
+                0x0000000010003764       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003764                tud_control_status
  .text.tud_control_xfer
-                0x0000000010003c80       0xbc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003c80                tud_control_xfer
+                0x0000000010003794       0xbc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003794                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010003d3c       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003d3c                usbd_control_reset
+                0x0000000010003850       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003850                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010003d50        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003d50                usbd_control_set_complete_callback
+                0x0000000010003864        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003864                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010003d5c       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003d5c                usbd_control_set_request
+                0x0000000010003870       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010003870                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010003d78       0xfc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010003d78                usbd_control_xfer_cb
+                0x000000001000388c       0xfc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000388c                usbd_control_xfer_cb
  .text.tud_vendor_n_available
-                0x0000000010003e74       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010003e74                tud_vendor_n_available
+                0x0000000010003988       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003988                tud_vendor_n_available
  .text.tud_vendor_n_read
-                0x0000000010003e90       0x68 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010003e90                tud_vendor_n_read
+                0x00000000100039a4       0x68 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x00000000100039a4                tud_vendor_n_read
  .text.tud_vendor_n_write_flush
-                0x0000000010003ef8       0x74 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010003ef8                tud_vendor_n_write_flush
+                0x0000000010003a0c       0x74 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003a0c                tud_vendor_n_write_flush
  .text.tud_vendor_n_write
-                0x0000000010003f6c       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010003f6c                tud_vendor_n_write
+                0x0000000010003a80       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003a80                tud_vendor_n_write
  .text.vendord_init
-                0x0000000010003fa4       0x5c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010003fa4                vendord_init
+                0x0000000010003ab8       0x5c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003ab8                vendord_init
  .text.vendord_reset
-                0x0000000010004000       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x0000000010004000                vendord_reset
+                0x0000000010003b14       0x1c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003b14                vendord_reset
  .text.vendord_open
-                0x000000001000401c       0xc4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x000000001000401c                vendord_open
+                0x0000000010003b30       0xc4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003b30                vendord_open
  .text.vendord_xfer_cb
-                0x00000000100040e0       0x88 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-                0x00000000100040e0                vendord_xfer_cb
+                0x0000000010003bf4       0x88 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+                0x0000000010003bf4                vendord_xfer_cb
  .text.tu_edpt_claim
-                0x0000000010004168       0x50 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010004168                tu_edpt_claim
+                0x0000000010003c7c       0x50 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010003c7c                tu_edpt_claim
  .text.tu_edpt_release
-                0x00000000100041b8       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100041b8                tu_edpt_release
+                0x0000000010003ccc       0x38 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010003ccc                tu_edpt_release
  .text.tu_edpt_validate
-                0x00000000100041f0       0x78 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100041f0                tu_edpt_validate
+                0x0000000010003d04       0x78 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010003d04                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010004268       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010004268                tu_edpt_bind_driver
+                0x0000000010003d7c       0x34 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010003d7c                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x000000001000429c       0x70 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000429c                tu_fifo_config
+                0x0000000010003db0       0x70 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003db0                tu_fifo_config
  .text.tu_fifo_count
-                0x000000001000430c       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000430c                tu_fifo_count
+                0x0000000010003e20       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003e20                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010004338       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004338                tu_fifo_empty
+                0x0000000010003e4c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003e4c                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010004348       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004348                tu_fifo_remaining
+                0x0000000010003e5c       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003e5c                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010004374       0xa0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004374                tu_fifo_read
+                0x0000000010003e88       0xa0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003e88                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010004414       0xec CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004414                tu_fifo_read_n
+                0x0000000010003f28       0xec CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010003f28                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010004500       0x88 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004500                tu_fifo_write
+                0x0000000010004014       0x88 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004014                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010004588      0x168 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004588                tu_fifo_write_n
+                0x000000001000409c      0x168 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000409c                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x00000000100046f0       0x40 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100046f0                tu_fifo_clear
+                0x0000000010004204       0x40 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004204                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010004730       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004730                tu_fifo_set_overwritable
- .text          0x0000000010004778       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010004778                strlen
+                0x0000000010004244       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010004244                tu_fifo_set_overwritable
+ .text          0x000000001000428c       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x000000001000428c                strlen
  *(.fini)
- .fini          0x00000000100047d4        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x00000000100047d4                _fini
- .fini.__stub   0x00000000100047d8       0xc0 linker stubs
+ .fini          0x00000000100042e8        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x00000000100042e8                _fini
+ *fill*         0x00000000100042ec        0x4 
+ .fini.__stub   0x00000000100042f0       0xb0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2680,132 +2669,132 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010004898        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010004898                . = ALIGN (0x4)
+ .eh_frame      0x00000000100043a0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100043a0                . = ALIGN (0x4)
 
-.glue_7         0x0000000010004898        0x0
- .glue_7        0x0000000010004898        0x0 linker stubs
+.glue_7         0x00000000100043a0        0x0
+ .glue_7        0x00000000100043a0        0x0 linker stubs
 
-.glue_7t        0x0000000010004898        0x0
- .glue_7t       0x0000000010004898        0x0 linker stubs
+.glue_7t        0x00000000100043a0        0x0
+ .glue_7t       0x00000000100043a0        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010004898        0x0
- .vfp11_veneer  0x0000000010004898        0x0 linker stubs
+.vfp11_veneer   0x00000000100043a0        0x0
+ .vfp11_veneer  0x00000000100043a0        0x0 linker stubs
 
-.v4_bx          0x0000000010004898        0x0
- .v4_bx         0x0000000010004898        0x0 linker stubs
+.v4_bx          0x00000000100043a0        0x0
+ .v4_bx         0x00000000100043a0        0x0 linker stubs
 
-.iplt           0x0000000010004898        0x0
- .iplt          0x0000000010004898        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000100043a0        0x0
+ .iplt          0x00000000100043a0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010004898      0x430
+.rodata         0x00000000100043a0      0x430
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.tud_vendor_control_xfer_cb.str1.4
-                0x0000000010004898       0x1f CMakeFiles/pico-wifi-adapter.dir/main.c.obj
- *fill*         0x00000000100048b7        0x1 
+                0x00000000100043a0       0x1f CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+ *fill*         0x00000000100043bf        0x1 
  .rodata.tud_cdc_line_state_cb.str1.4
-                0x00000000100048b8       0x22 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
- *fill*         0x00000000100048da        0x2 
+                0x00000000100043c0       0x22 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+ *fill*         0x00000000100043e2        0x2 
  .rodata.desc_url
-                0x00000000100048dc       0x30 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
-                0x00000000100048dc                desc_url
+                0x00000000100043e4       0x30 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x00000000100043e4                desc_url
  .rodata.tud_descriptor_string_cb.str1.4
-                0x000000001000490c       0x11 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
- *fill*         0x000000001000491d        0x3 
+                0x0000000010004414       0x11 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+ *fill*         0x0000000010004425        0x3 
  .rodata.str1.4
-                0x0000000010004920       0x33 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
- *fill*         0x0000000010004953        0x1 
+                0x0000000010004428       0x33 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+ *fill*         0x000000001000445b        0x1 
  .rodata.__compound_literal.0
-                0x0000000010004954        0x2 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
- *fill*         0x0000000010004956        0x2 
+                0x000000001000445c        0x2 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+ *fill*         0x000000001000445e        0x2 
  .rodata.desc_bos
-                0x0000000010004958       0x39 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010004958                desc_bos
- *fill*         0x0000000010004991        0x3 
+                0x0000000010004460       0x39 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010004460                desc_bos
+ *fill*         0x0000000010004499        0x3 
  .rodata.desc_configuration
-                0x0000000010004994       0x62 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010004994                desc_configuration
- *fill*         0x00000000100049f6        0x2 
+                0x000000001000449c       0x62 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x000000001000449c                desc_configuration
+ *fill*         0x00000000100044fe        0x2 
  .rodata.desc_device
-                0x00000000100049f8       0x12 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x00000000100049f8                desc_device
- *fill*         0x0000000010004a0a        0x2 
+                0x0000000010004500       0x12 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010004500                desc_device
+ *fill*         0x0000000010004512        0x2 
  .rodata.desc_ms_os_20
-                0x0000000010004a0c       0xb2 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000010004a0c                desc_ms_os_20
- *fill*         0x0000000010004abe        0x2 
+                0x0000000010004514       0xb2 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000010004514                desc_ms_os_20
+ *fill*         0x00000000100045c6        0x2 
  .rodata.spin_lock_claim_unused.str1.4
-                0x0000000010004ac0       0x1b CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010004adb        0x1 
+                0x00000000100045c8       0x1b CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x00000000100045e3        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010004adc       0x22 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010004afe        0x2 
+                0x00000000100045e4       0x22 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010004606        0x2 
  .rodata.panic.str1.4
-                0x0000000010004b00       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010004608       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                          0x12 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010004b10        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010004618        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x0000000010004b1c       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010004624       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x0000000010004b34       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000001000463c       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                           0x1 (size before relaxing)
  .rodata.str1.4
-                0x0000000010004b34       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000463c       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010004b7c        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010004684        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010004b88        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010004690        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010004b94        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000469c        0xc CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010004ba0        0x2 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010004ba2        0x2 
+                0x00000000100046a8        0x2 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x00000000100046aa        0x2 
  .rodata.str1.4
-                0x0000000010004ba4       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100046ac       0x14 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x0000000010004bb8       0x53 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010004c0b        0x1 
+                0x00000000100046c0       0x53 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010004713        0x1 
  .rodata.tud_task_ext
-                0x0000000010004c0c       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010004714       0x8c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010004c98       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004cc8                . = ALIGN (0x4)
+                0x00000000100047a0       0x30 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100047d0                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010004cc8                . = ALIGN (0x4)
+                0x00000000100047d0                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010004cc8                __exidx_start = .
+                0x00000000100047d0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010004cc8                __exidx_end = .
-                0x0000000010004cc8                . = ALIGN (0x4)
-                0x0000000010004cc8                __binary_info_start = .
+                0x00000000100047d0                __exidx_end = .
+                0x00000000100047d0                . = ALIGN (0x4)
+                0x00000000100047d0                __binary_info_start = .
 
-.binary_info    0x0000000010004cc8       0x1c
+.binary_info    0x00000000100047d0       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010004cc8        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047d0        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010004ccc        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047d4        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010004cd0        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047d8        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010004cd4        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047dc        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010004cd8        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047e0        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010004cdc        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047e4        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010004ce0        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100047e8        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x0000000010004ce4                __binary_info_end = .
+                0x00000000100047ec                __binary_info_end = .
 
-.rel.dyn        0x0000000010004ce4        0x0
- .rel.iplt      0x0000000010004ce4        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010004ce4                . = ALIGN (0x4)
+.rel.dyn        0x00000000100047ec        0x0
+ .rel.iplt      0x00000000100047ec        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100047ec                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2814,7 +2803,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0xe20 load address 0x0000000010004ce4
+.data           0x00000000200000c0      0xe20 load address 0x00000000100047ec
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2877,23 +2866,21 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.rodata*)
                 0x0000000020000de0                . = ALIGN (0x4)
  *(.data*)
- .data.blink_interval_ms
-                0x0000000020000de0        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
  .data.string_desc_arr
-                0x0000000020000de4       0x18 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
-                0x0000000020000de4                string_desc_arr
+                0x0000000020000de0       0x18 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
+                0x0000000020000de0                string_desc_arr
  .data.striped_spin_lock_num
-                0x0000000020000dfc        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000020000dfd        0x3 
- .data          0x0000000020000e00       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x0000000020000e00                irq_handler_chain_slots
-                0x0000000020000e30                irq_handler_chain_first_slot
-                0x0000000020000e3a                irq_handler_chain_remove_tail
+                0x0000000020000df8        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000020000df9        0x3 
+ .data          0x0000000020000dfc       0x48 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000020000dfc                irq_handler_chain_slots
+                0x0000000020000e2c                irq_handler_chain_first_slot
+                0x0000000020000e36                irq_handler_chain_remove_tail
  .data.default_alarm_pool
-                0x0000000020000e48       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000e44       0x18 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x0000000020000e60       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x0000000020000e70        0x0 
+                0x0000000020000e5c       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x0000000020000e6c        0x4 
  .data.aeabi_bits_funcs
                 0x0000000020000e70       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                 0x0000000020000e70                aeabi_bits_funcs
@@ -2948,38 +2935,38 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x0000000020000ee0                . = ALIGN (0x4)
                 0x0000000020000ee0                __data_end__ = .
-                0x0000000010004ce4                __etext = LOADADDR (.data)
+                0x00000000100047ec                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x0000000020000ee0        0x0 load address 0x0000000010005b04
+                0x0000000020000ee0        0x0 load address 0x000000001000560c
  .tm_clone_table
                 0x0000000020000ee0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000ee0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000ee0        0x0 load address 0x0000000010005b04
+.igot.plt       0x0000000020000ee0        0x0 load address 0x000000001000560c
  .igot.plt      0x0000000020000ee0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000ee0        0x0 load address 0x0000000010005b04
+                0x0000000020000ee0        0x0 load address 0x000000001000560c
                 0x0000000020000ee0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010005b04
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000560c
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010005b04                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000560c                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010005b04
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000560c
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010005b04                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000560c                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000ee0      0xd2c
+.bss            0x0000000020000ee0      0xd28
                 0x0000000020000ee0                . = ALIGN (0x4)
                 0x0000000020000ee0                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3044,35 +3031,32 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020001aec                sf_table
  .bss.sleep_notifier
                 0x0000000020001bec        0x4 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
- .bss.start_ms.1
-                0x0000000020001bf0        0x4 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
  .bss.target_hi
-                0x0000000020001bf4       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001bf0       0x10 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss._app_driver_count
-                0x0000000020001c04        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020001c00        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._sof_enable
-                0x0000000020001c05        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020001c01        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.boot2_copyout_valid
-                0x0000000020001c06        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x0000000020001c07        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001c02        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x0000000020001c03        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x0000000020001c08        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.led_state.0
-                0x0000000020001c09        0x1 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000020001c04        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss.timer_callbacks_pending
-                0x0000000020001c0a        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001c05        0x1 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.web_serial_connected
-                0x0000000020001c0b        0x1 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
+                0x0000000020001c06        0x1 CMakeFiles/pico-wifi-adapter.dir/main.c.obj
  *(COMMON)
-                0x0000000020001c0c                . = ALIGN (0x4)
-                0x0000000020001c0c                __bss_end__ = .
+                0x0000000020001c08                . = ALIGN (0x4)
+ *fill*         0x0000000020001c07        0x1 
+                0x0000000020001c08                __bss_end__ = .
 
-.heap           0x0000000020001c0c      0x800
-                0x0000000020001c0c                __end__ = .
-                0x0000000020001c0c                end = __end__
+.heap           0x0000000020001c08      0x800
+                0x0000000020001c08                __end__ = .
+                0x0000000020001c08                end = __end__
  *(.heap*)
- .heap          0x0000000020001c0c      0x800 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x000000002000240c                __HeapLimit = .
+ .heap          0x0000000020001c08      0x800 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020002408                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000      0x800
  *(.stack1*)
@@ -3082,8 +3066,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010005b04        0x0
-                0x0000000010005b04                PROVIDE (__flash_binary_end = .)
+.flash_end      0x000000001000560c        0x0
+                0x000000001000560c                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3178,7 +3162,7 @@ LOAD CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/
 LOAD CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 LOAD CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
 LOAD CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-LOAD /tmp/ccH8GK2d.o
+LOAD /tmp/ccP6T9O8.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3292,7 +3276,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000786       0x2c CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
  .ARM.attributes
-                0x00000000000007b2       0x22 /tmp/ccH8GK2d.o
+                0x00000000000007b2       0x22 /tmp/ccP6T9O8.o
  .ARM.attributes
                 0x00000000000007d4       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

@@ -84,33 +84,10 @@ enum
 
 #define CONFIG_TOTAL_LEN    (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + TUD_VENDOR_DESC_LEN)
 
-#if CFG_TUSB_MCU == OPT_MCU_LPC175X_6X || CFG_TUSB_MCU == OPT_MCU_LPC177X_8X || CFG_TUSB_MCU == OPT_MCU_LPC40XX
-  // LPC 17xx and 40xx endpoint type (bulk/interrupt/iso) are fixed by its number
-  // 0 control, 1 In, 2 Bulk, 3 Iso, 4 In etc ...
-  #define EPNUM_CDC_IN     2
-  #define EPNUM_CDC_OUT    2
-  #define EPNUM_VENDOR_IN  5
-  #define EPNUM_VENDOR_OUT 5
-#elif CFG_TUSB_MCU == OPT_MCU_SAMG || CFG_TUSB_MCU ==  OPT_MCU_SAMX7X
-  // SAMG & SAME70 don't support a same endpoint number with different direction IN and OUT
-  //    e.g EP1 OUT & EP1 IN cannot exist together
-  #define EPNUM_CDC_IN     2
-  #define EPNUM_CDC_OUT    3
-  #define EPNUM_VENDOR_IN  4
-  #define EPNUM_VENDOR_OUT 5
-#elif CFG_TUSB_MCU == OPT_MCU_FT90X || CFG_TUSB_MCU == OPT_MCU_FT93X
-  // FT9XX doesn't support a same endpoint number with different direction IN and OUT
-  //    e.g EP1 OUT & EP1 IN cannot exist together
-  #define EPNUM_CDC_IN     2
-  #define EPNUM_CDC_OUT    3
-  #define EPNUM_VENDOR_IN  4
-  #define EPNUM_VENDOR_OUT 5
-#else
-  #define EPNUM_CDC_IN     2
-  #define EPNUM_CDC_OUT    2
-  #define EPNUM_VENDOR_IN  3
-  #define EPNUM_VENDOR_OUT 3
-#endif
+#define EPNUM_CDC_IN     2
+#define EPNUM_CDC_OUT    2
+#define EPNUM_VENDOR_IN  3
+#define EPNUM_VENDOR_OUT 3
 
 uint8_t const desc_configuration[] =
 {

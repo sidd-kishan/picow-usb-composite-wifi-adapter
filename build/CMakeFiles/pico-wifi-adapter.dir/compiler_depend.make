@@ -381,6 +381,114 @@ CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
   /usr/include/newlib/sys/stdio.h \
   ../pico-sdk/lib/cyw43-driver/src/cyw43_stats.h
 
+CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c \
+  ../pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  ../pico-sdk/src/common/pico_base/include/pico.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  ../pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  ../pico-sdk/src/boards/include/boards/pico_w.h \
+  ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/error.h \
+  ../pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  ../pico-sdk/src/common/pico_time/include/pico/time.h \
+  ../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  ../pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  ../pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  ../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+  ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+  ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+  ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+  ../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h \
+  ../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h \
+  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
+  ../pico-sdk/lib/tinyusb/src/tusb.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/include/newlib/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  ../pico-sdk/lib/tinyusb/src/tusb_option.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  ../tusb_config.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_types.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+  ../pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+  ../pico-sdk/lib/tinyusb/src/device/usbd.h \
+  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
+  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
+  ../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
+  ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h
+
 CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: ../pico-sdk/lib/tinyusb/src/class/audio/audio_device.c \
   ../pico-sdk/lib/tinyusb/src/tusb_option.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
@@ -3468,37 +3576,31 @@ CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_descriptors.c \
 
 ../pico-sdk/src/rp2_common/boot_stage2/include/boot_stage2/config.h:
 
-../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
-
-../pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
-
-../pico-sdk/lib/tinyusb/src/device/dcd.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
-
-../pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
-
 /usr/include/newlib/sys/unistd.h:
 
-../pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
+/usr/include/newlib/unistd.h:
 
-../pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
+
+../pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
+
+../pico-sdk/src/common/pico_sync/critical_section.c:
+
+/usr/include/newlib/sys/_pthreadtypes.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
+
+/usr/include/newlib/sys/string.h:
+
+../pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c:
+
+/usr/include/newlib/sys/types.h:
 
 ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43_internal.h:
 
-/usr/include/newlib/newlib.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
-
 ../pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
-
-/usr/include/newlib/sys/types.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
 
 /usr/include/newlib/sys/_intsup.h:
 
@@ -3542,9 +3644,9 @@ CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_descriptors.c \
 
 ../pico-sdk/src/rp2_common/pico_double/double_math.c:
 
-../pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
-
 ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 ../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
 
@@ -3582,6 +3684,8 @@ CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_descriptors.c \
 
 ../pico-sdk/src/common/pico_time/include/pico/time.h:
 
+../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
+
 ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
 
 generated/pico_base/pico/version.h:
@@ -3600,13 +3704,19 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/common/pico_base/include/pico/config.h:
 
+../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
+
 ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
-../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
 
-../pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
+../pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h:
 
-../pico-sdk/src/common/pico_sync/include/pico/mutex.h:
+../pico-sdk/src/common/pico_base/include/pico/types.h:
+
+../pico-sdk/src/rp2_common/hardware_pll/pll.c:
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
@@ -3620,10 +3730,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/lib/tinyusb/src/device/usbd_control.c:
 
-../pico-sdk/lib/tinyusb/src/device/usbd.c:
-
-../pico-sdk/src/common/pico_base/include/pico.h:
-
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
 ../pico-sdk/lib/tinyusb/src/common/tusb_private.h:
@@ -3635,10 +3741,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 ../pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
 
 /usr/include/newlib/string.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_spi.h:
 
 /usr/include/newlib/sys/cdefs.h:
 
@@ -3678,7 +3780,21 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /usr/include/newlib/sys/lock.h:
 
+/usr/include/newlib/sys/times.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
+
 /usr/include/newlib/sys/_locale.h:
+
+/usr/include/newlib/newlib.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
+
+../pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
+
+../pico-sdk/src/common/pico_sync/include/pico/mutex.h:
+
+../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
 
 ../pico-sdk/lib/cyw43-driver/firmware/wifi_nvram_43439.h:
 
@@ -3686,11 +3802,11 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
 
-/usr/include/newlib/sys/string.h:
-
 ../pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
 ../pico-sdk/src/common/pico_time/time.c:
+
+../pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c:
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
 
@@ -3701,6 +3817,12 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 ../pico-sdk/lib/tinyusb/src/common/tusb_types.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
+
+../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:
+
+../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+../pico-sdk/src/rp2_common/hardware_uart/uart.c:
 
 /usr/include/newlib/_newlib_version.h:
 
@@ -3748,6 +3870,12 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
 
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
+
+../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
+
+/usr/include/newlib/stdlib.h:
+
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
@@ -3760,19 +3888,37 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../tusb_config.h:
 
+../pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
+
+generated/pico_base/pico/config_autogen.h:
+
+../pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
+
+../pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
+
+../pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
+../pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
+
+../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
+
+../pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
+
 ../pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
 ../pico-sdk/src/common/pico_sync/lock_core.c:
 
-../pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
+../pico-sdk/src/common/pico_base/include/pico.h:
 
-generated/pico_base/pico/config_autogen.h:
+../pico-sdk/lib/tinyusb/src/device/usbd.c:
 
-../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
 
-/usr/include/newlib/stdlib.h:
+../pico-sdk/lib/tinyusb/src/device/dcd.h:
 
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
+../pico-sdk/lib/cyw43-driver/src/cyw43_spi.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43_debug_pins.h:
 
@@ -3800,11 +3946,9 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/lib/tinyusb/src/tusb.c:
 
-../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
+../pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
 
-/usr/include/newlib/sys/times.h:
-
-../pico-sdk/src/common/pico_sync/critical_section.c:
+../pico-sdk/src/common/pico_sync/sem.c:
 
 ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:
 
@@ -3834,10 +3978,6 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h:
 
-../pico-sdk/src/common/pico_sync/sem.c:
-
-../pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
-
 ../pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
 
 ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
@@ -3856,8 +3996,6 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
 
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
-
 ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
 
 ../pico-sdk/src/rp2_common/hardware_exception/exception.c:
@@ -3867,12 +4005,6 @@ generated/pico_base/pico/config_autogen.h:
 ../pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
-
-../pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
 
 ../pico-sdk/src/rp2_common/hardware_pio/pio.c:
 
@@ -3884,23 +4016,9 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
 
-../pico-sdk/src/common/pico_base/include/pico/types.h:
-
-../pico-sdk/src/rp2_common/hardware_pll/pll.c:
-
 ../pico-sdk/src/rp2_common/hardware_sync/sync.c:
 
 ../pico-sdk/src/rp2_common/hardware_timer/timer.c:
-
-../pico-sdk/src/rp2_common/hardware_uart/uart.c:
-
-../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:
-
-../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
-
-../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43.h:
 
@@ -3968,6 +4086,10 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/math.h:
 
+/usr/include/newlib/time.h:
+
+../pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h:
+
 /usr/include/newlib/c++/10.3.1/stdlib.h:
 
 /usr/include/newlib/assert.h:
@@ -3990,14 +4112,4 @@ generated/pico_base/pico/config_autogen.h:
 
 /usr/include/newlib/sys/time.h:
 
-../pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include/pico/fix/rp2040_usb_device_enumeration.h:
-
-/usr/include/newlib/time.h:
-
 /usr/include/newlib/machine/time.h:
-
-/usr/include/newlib/unistd.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
-
-../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h:

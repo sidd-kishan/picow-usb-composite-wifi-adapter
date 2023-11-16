@@ -2,7 +2,7 @@
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/lwipcore.dir
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/lwipallapps.dir
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/lwipmbedtls.dir
-/mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/pico-wifi-adapter.dir
+/mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/picow-usb-composite-wifi-adapter.dir
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/ELF2UF2Build.dir
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Aayush/Desktop/picow-usb-composite-wifi-adapter/picow-usb-composite-wifi-adapter/build/CMakeFiles/rebuild_cache.dir

@@ -103,19 +103,20 @@ void tud_resume_cb(void)
 }
 
 
-// send characters to both CDC and WebUSB
-void echo_all(uint8_t buf[], uint32_t count)
+// send characters to both CDC COMs
+void echo_all(uint8_t itf, uint8_t buf[], uint32_t count)
 {
+	
   // echo to cdc
   if ( tud_cdc_connected() )
   {
     for(uint32_t i=0; i<count; i++)
     {
-      tud_cdc_write_char(buf[i]);
+      tud_cdc_n_write_char(itf, buf[i]);
 
-      if ( buf[i] == '\r' ) tud_cdc_write_char('\n');
+      if ( buf[i] == '\r' ) tud_cdc_n_write_char(itf, '\n');
     }
-    tud_cdc_write_flush();
+    tud_cdc_n_write_flush(itf);
   }
 }
 
@@ -124,17 +125,25 @@ void echo_all(uint8_t buf[], uint32_t count)
 //--------------------------------------------------------------------+
 void cdc_task(void)
 {
-  if ( tud_cdc_connected() )
+  uint8_t itf;
+
+  for (itf = 0; itf < CFG_TUD_CDC; itf++)
   {
-    // connected and there are data available
-    if ( tud_cdc_available() )
+    // connected() check for DTR bit
+    // Most but not all terminal client set this when making connection
+    // if ( tud_cdc_n_connected(itf) )
     {
-      uint8_t buf[64];
+      if ( tud_cdc_n_available(itf) )
+      {
+        uint8_t buf[64];
 
-      uint32_t count = tud_cdc_read(buf, sizeof(buf));
+        uint32_t count = tud_cdc_n_read(itf, buf, sizeof(buf));
 
-      // echo back to both web serial and cdc
-      echo_all(buf, count);
+        // echo back to both serial ports
+        echo_all(0, buf, count);
+        echo_all(1, buf, count);
+		echo_all(2, buf, count);
+      }
     }
   }
 }

@@ -38,11 +38,10 @@ CMakeFiles/pico-wifi-adapter.dir/main.c.obj: ../main.c \
   /usr/include/newlib/sys/_locale.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
   ../pico-sdk/lib/tinyusb/src/tusb.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
   ../pico-sdk/lib/tinyusb/src/tusb_option.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
   ../tusb_config.h \
@@ -3566,10 +3565,11 @@ CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_i
   ../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
 CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_descriptors.c \
+  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
   ../pico-sdk/lib/tinyusb/src/tusb.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/_ansi.h \
@@ -3732,6 +3732,8 @@ CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_descriptors.c \
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
+../pico-sdk/lib/tinyusb/hw/bsp/board_api.h:
+
 ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
@@ -3784,6 +3786,10 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/common/pico_base/include/pico/assert.h:
 
+../pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
+
+../pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c:
+
 /usr/include/newlib/machine/_endian.h:
 
 ../pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h:
@@ -3830,8 +3836,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
 
-/usr/include/newlib/string.h:
-
 /usr/include/newlib/sys/cdefs.h:
 
 /usr/include/newlib/sys/sched.h:
@@ -3841,6 +3845,8 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 /usr/include/newlib/machine/stdlib.h:
 
 /usr/include/newlib/sys/_stdint.h:
+
+/usr/include/newlib/string.h:
 
 ../pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
@@ -3942,18 +3948,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/lib/tinyusb/src/tusb_option.h:
 
-../pico-sdk/lib/tinyusb/hw/bsp/board_api.h:
-
-../pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c:
-
-../pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
-
-/usr/include/newlib/sys/stdio.h:
-
-../pico-sdk/src/rp2_common/pico_multicore/multicore.c:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
-
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
 
 ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
@@ -3965,6 +3959,12 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
 
 ../pico-sdk/lib/tinyusb/src/tusb.h:
+
+/usr/include/newlib/sys/stdio.h:
+
+../pico-sdk/src/rp2_common/pico_multicore/multicore.c:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43_country.h:
 

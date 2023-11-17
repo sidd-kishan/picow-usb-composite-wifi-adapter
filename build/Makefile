@@ -169,17 +169,17 @@ lwipmbedtls/fast:
 .PHONY : lwipmbedtls/fast
 
 #=============================================================================
-# Target rules for targets named picow-usb-composite-wifi-adapter
+# Target rules for targets named pico-wifi-adapter
 
 # Build rule for target.
-picow-usb-composite-wifi-adapter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picow-usb-composite-wifi-adapter
-.PHONY : picow-usb-composite-wifi-adapter
+pico-wifi-adapter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-wifi-adapter
+.PHONY : pico-wifi-adapter
 
 # fast build rule for target.
-picow-usb-composite-wifi-adapter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/build
-.PHONY : picow-usb-composite-wifi-adapter/fast
+pico-wifi-adapter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/build
+.PHONY : pico-wifi-adapter/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -264,7 +264,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -272,7 +272,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -280,15 +280,39 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/main.c.s
 .PHONY : main.c.s
+
+msc_disk.obj: msc_disk.c.obj
+.PHONY : msc_disk.obj
+
+# target to build an object file
+msc_disk.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/msc_disk.c.obj
+.PHONY : msc_disk.c.obj
+
+msc_disk.i: msc_disk.c.i
+.PHONY : msc_disk.i
+
+# target to preprocess a source file
+msc_disk.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/msc_disk.c.i
+.PHONY : msc_disk.c.i
+
+msc_disk.s: msc_disk.c.s
+.PHONY : msc_disk.s
+
+# target to generate assembly for a file
+msc_disk.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/msc_disk.c.s
+.PHONY : msc_disk.c.s
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj
 
 # target to build an object file
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
@@ -296,7 +320,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: pico-sdk/lib/cyw43-driver/src/cyw43_
 
 # target to preprocess a source file
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
@@ -304,7 +328,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: pico-sdk/lib/cyw43-driver/src/cyw43_
 
 # target to generate assembly for a file
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
@@ -312,7 +336,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: pico-sdk/lib/cyw43-driver/src/cyw43_
 
 # target to build an object file
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
@@ -320,7 +344,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: pico-sdk/lib/cyw43-driver/src/cyw43_ll
 
 # target to preprocess a source file
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
@@ -328,7 +352,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: pico-sdk/lib/cyw43-driver/src/cyw43_ll
 
 # target to generate assembly for a file
 pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
@@ -336,7 +360,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: pico-sdk/lib/cyw43-driver/src/cyw4
 
 # target to build an object file
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
 
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
@@ -344,7 +368,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: pico-sdk/lib/cyw43-driver/src/cyw43_
 
 # target to preprocess a source file
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
@@ -352,7 +376,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: pico-sdk/lib/cyw43-driver/src/cyw43_
 
 # target to generate assembly for a file
 pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
@@ -360,7 +384,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: pico-sdk/lib/cyw43-driver/src/cyw
 
 # target to build an object file
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
 
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
@@ -368,7 +392,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: pico-sdk/lib/cyw43-driver/src/cyw43
 
 # target to preprocess a source file
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
@@ -376,7 +400,7 @@ pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: pico-sdk/lib/cyw43-driver/src/cyw43
 
 # target to generate assembly for a file
 pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 
 pico-sdk/lib/lwip/src/api/api_lib.obj: pico-sdk/lib/lwip/src/api/api_lib.c.obj
@@ -721,7 +745,6 @@ pico-sdk/lib/lwip/src/apps/http/httpd.obj: pico-sdk/lib/lwip/src/apps/http/httpd
 # target to build an object file
 pico-sdk/lib/lwip/src/apps/http/httpd.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.obj
 .PHONY : pico-sdk/lib/lwip/src/apps/http/httpd.c.obj
 
 pico-sdk/lib/lwip/src/apps/http/httpd.i: pico-sdk/lib/lwip/src/apps/http/httpd.c.i
@@ -730,7 +753,6 @@ pico-sdk/lib/lwip/src/apps/http/httpd.i: pico-sdk/lib/lwip/src/apps/http/httpd.c
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/apps/http/httpd.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
 .PHONY : pico-sdk/lib/lwip/src/apps/http/httpd.c.i
 
 pico-sdk/lib/lwip/src/apps/http/httpd.s: pico-sdk/lib/lwip/src/apps/http/httpd.c.s
@@ -739,7 +761,6 @@ pico-sdk/lib/lwip/src/apps/http/httpd.s: pico-sdk/lib/lwip/src/apps/http/httpd.c
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/apps/http/httpd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
 .PHONY : pico-sdk/lib/lwip/src/apps/http/httpd.c.s
 
 pico-sdk/lib/lwip/src/apps/lwiperf/lwiperf.obj: pico-sdk/lib/lwip/src/apps/lwiperf/lwiperf.c.obj
@@ -2116,7 +2137,6 @@ pico-sdk/lib/lwip/src/core/mem.obj: pico-sdk/lib/lwip/src/core/mem.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/mem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/mem.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/mem.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/mem.c.obj
 
 pico-sdk/lib/lwip/src/core/mem.i: pico-sdk/lib/lwip/src/core/mem.c.i
@@ -2125,7 +2145,6 @@ pico-sdk/lib/lwip/src/core/mem.i: pico-sdk/lib/lwip/src/core/mem.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/mem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/mem.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/mem.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/mem.c.i
 
 pico-sdk/lib/lwip/src/core/mem.s: pico-sdk/lib/lwip/src/core/mem.c.s
@@ -2134,7 +2153,6 @@ pico-sdk/lib/lwip/src/core/mem.s: pico-sdk/lib/lwip/src/core/mem.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/mem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/mem.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/mem.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/mem.c.s
 
 pico-sdk/lib/lwip/src/core/memp.obj: pico-sdk/lib/lwip/src/core/memp.c.obj
@@ -2143,7 +2161,6 @@ pico-sdk/lib/lwip/src/core/memp.obj: pico-sdk/lib/lwip/src/core/memp.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/memp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/memp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/memp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/memp.c.obj
 
 pico-sdk/lib/lwip/src/core/memp.i: pico-sdk/lib/lwip/src/core/memp.c.i
@@ -2152,7 +2169,6 @@ pico-sdk/lib/lwip/src/core/memp.i: pico-sdk/lib/lwip/src/core/memp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/memp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/memp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/memp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/memp.c.i
 
 pico-sdk/lib/lwip/src/core/memp.s: pico-sdk/lib/lwip/src/core/memp.c.s
@@ -2161,7 +2177,6 @@ pico-sdk/lib/lwip/src/core/memp.s: pico-sdk/lib/lwip/src/core/memp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/memp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/memp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/memp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/memp.c.s
 
 pico-sdk/lib/lwip/src/core/netif.obj: pico-sdk/lib/lwip/src/core/netif.c.obj
@@ -2194,7 +2209,6 @@ pico-sdk/lib/lwip/src/core/pbuf.obj: pico-sdk/lib/lwip/src/core/pbuf.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/pbuf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/pbuf.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.obj
 
 pico-sdk/lib/lwip/src/core/pbuf.i: pico-sdk/lib/lwip/src/core/pbuf.c.i
@@ -2203,7 +2217,6 @@ pico-sdk/lib/lwip/src/core/pbuf.i: pico-sdk/lib/lwip/src/core/pbuf.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/pbuf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/pbuf.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/pbuf.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.i
 
 pico-sdk/lib/lwip/src/core/pbuf.s: pico-sdk/lib/lwip/src/core/pbuf.c.s
@@ -2212,7 +2225,6 @@ pico-sdk/lib/lwip/src/core/pbuf.s: pico-sdk/lib/lwip/src/core/pbuf.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/pbuf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/pbuf.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/pbuf.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.s
 
 pico-sdk/lib/lwip/src/core/raw.obj: pico-sdk/lib/lwip/src/core/raw.c.obj
@@ -2221,7 +2233,6 @@ pico-sdk/lib/lwip/src/core/raw.obj: pico-sdk/lib/lwip/src/core/raw.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/raw.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/raw.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/raw.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/raw.c.obj
 
 pico-sdk/lib/lwip/src/core/raw.i: pico-sdk/lib/lwip/src/core/raw.c.i
@@ -2230,7 +2241,6 @@ pico-sdk/lib/lwip/src/core/raw.i: pico-sdk/lib/lwip/src/core/raw.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/raw.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/raw.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/raw.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/raw.c.i
 
 pico-sdk/lib/lwip/src/core/raw.s: pico-sdk/lib/lwip/src/core/raw.c.s
@@ -2239,7 +2249,6 @@ pico-sdk/lib/lwip/src/core/raw.s: pico-sdk/lib/lwip/src/core/raw.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/raw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/raw.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/raw.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/raw.c.s
 
 pico-sdk/lib/lwip/src/core/stats.obj: pico-sdk/lib/lwip/src/core/stats.c.obj
@@ -2248,7 +2257,6 @@ pico-sdk/lib/lwip/src/core/stats.obj: pico-sdk/lib/lwip/src/core/stats.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/stats.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/stats.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/stats.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/stats.c.obj
 
 pico-sdk/lib/lwip/src/core/stats.i: pico-sdk/lib/lwip/src/core/stats.c.i
@@ -2257,7 +2265,6 @@ pico-sdk/lib/lwip/src/core/stats.i: pico-sdk/lib/lwip/src/core/stats.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/stats.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/stats.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/stats.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/stats.c.i
 
 pico-sdk/lib/lwip/src/core/stats.s: pico-sdk/lib/lwip/src/core/stats.c.s
@@ -2266,7 +2273,6 @@ pico-sdk/lib/lwip/src/core/stats.s: pico-sdk/lib/lwip/src/core/stats.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/stats.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/stats.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/stats.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/stats.c.s
 
 pico-sdk/lib/lwip/src/core/sys.obj: pico-sdk/lib/lwip/src/core/sys.c.obj
@@ -2275,7 +2281,6 @@ pico-sdk/lib/lwip/src/core/sys.obj: pico-sdk/lib/lwip/src/core/sys.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/sys.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/sys.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/sys.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/sys.c.obj
 
 pico-sdk/lib/lwip/src/core/sys.i: pico-sdk/lib/lwip/src/core/sys.c.i
@@ -2284,7 +2289,6 @@ pico-sdk/lib/lwip/src/core/sys.i: pico-sdk/lib/lwip/src/core/sys.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/sys.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/sys.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/sys.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/sys.c.i
 
 pico-sdk/lib/lwip/src/core/sys.s: pico-sdk/lib/lwip/src/core/sys.c.s
@@ -2293,7 +2297,6 @@ pico-sdk/lib/lwip/src/core/sys.s: pico-sdk/lib/lwip/src/core/sys.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/sys.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/sys.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/sys.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/sys.c.s
 
 pico-sdk/lib/lwip/src/core/tcp.obj: pico-sdk/lib/lwip/src/core/tcp.c.obj
@@ -2302,7 +2305,6 @@ pico-sdk/lib/lwip/src/core/tcp.obj: pico-sdk/lib/lwip/src/core/tcp.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/tcp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/tcp.c.obj
 
 pico-sdk/lib/lwip/src/core/tcp.i: pico-sdk/lib/lwip/src/core/tcp.c.i
@@ -2311,7 +2313,6 @@ pico-sdk/lib/lwip/src/core/tcp.i: pico-sdk/lib/lwip/src/core/tcp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/tcp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/tcp.c.i
 
 pico-sdk/lib/lwip/src/core/tcp.s: pico-sdk/lib/lwip/src/core/tcp.c.s
@@ -2320,7 +2321,6 @@ pico-sdk/lib/lwip/src/core/tcp.s: pico-sdk/lib/lwip/src/core/tcp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/tcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/tcp.c.s
 
 pico-sdk/lib/lwip/src/core/tcp_in.obj: pico-sdk/lib/lwip/src/core/tcp_in.c.obj
@@ -2377,7 +2377,6 @@ pico-sdk/lib/lwip/src/core/timeouts.obj: pico-sdk/lib/lwip/src/core/timeouts.c.o
 # target to build an object file
 pico-sdk/lib/lwip/src/core/timeouts.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/timeouts.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/timeouts.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.obj
 
 pico-sdk/lib/lwip/src/core/timeouts.i: pico-sdk/lib/lwip/src/core/timeouts.c.i
@@ -2386,7 +2385,6 @@ pico-sdk/lib/lwip/src/core/timeouts.i: pico-sdk/lib/lwip/src/core/timeouts.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/timeouts.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/timeouts.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/timeouts.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.i
 
 pico-sdk/lib/lwip/src/core/timeouts.s: pico-sdk/lib/lwip/src/core/timeouts.c.s
@@ -2395,7 +2393,6 @@ pico-sdk/lib/lwip/src/core/timeouts.s: pico-sdk/lib/lwip/src/core/timeouts.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/timeouts.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/timeouts.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/timeouts.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.s
 
 pico-sdk/lib/lwip/src/core/udp.obj: pico-sdk/lib/lwip/src/core/udp.c.obj
@@ -2476,7 +2473,6 @@ pico-sdk/lib/lwip/src/netif/ethernet.obj: pico-sdk/lib/lwip/src/netif/ethernet.c
 # target to build an object file
 pico-sdk/lib/lwip/src/netif/ethernet.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
 .PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.obj
 
 pico-sdk/lib/lwip/src/netif/ethernet.i: pico-sdk/lib/lwip/src/netif/ethernet.c.i
@@ -2485,7 +2481,6 @@ pico-sdk/lib/lwip/src/netif/ethernet.i: pico-sdk/lib/lwip/src/netif/ethernet.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/netif/ethernet.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.i
 .PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.i
 
 pico-sdk/lib/lwip/src/netif/ethernet.s: pico-sdk/lib/lwip/src/netif/ethernet.c.s
@@ -2494,7 +2489,6 @@ pico-sdk/lib/lwip/src/netif/ethernet.s: pico-sdk/lib/lwip/src/netif/ethernet.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/netif/ethernet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.s
 .PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.s
 
 pico-sdk/lib/lwip/src/netif/lowpan6.obj: pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
@@ -3318,7 +3312,7 @@ pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: pico-sdk/lib/tinyusb/hw/bsp/rp204
 
 # target to build an object file
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 .PHONY : pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
@@ -3326,7 +3320,7 @@ pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: pico-sdk/lib/tinyusb/hw/bsp/rp2040/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 .PHONY : pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
@@ -3334,39 +3328,15 @@ pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: pico-sdk/lib/tinyusb/hw/bsp/rp2040/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 .PHONY : pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj: pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj
-
-# target to build an object file
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj
-
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.i: pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.i
-
-# target to preprocess a source file
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.i
-
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.s: pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.s
-
-# target to generate assembly for a file
-pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.s
 
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -3374,7 +3344,7 @@ pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: pico-sdk/lib/tinyusb/src/cl
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -3382,7 +3352,7 @@ pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: pico-sdk/lib/tinyusb/src/cl
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -3390,7 +3360,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: pico-sdk/lib/tinyusb/src/clas
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -3398,7 +3368,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: pico-sdk/lib/tinyusb/src/class/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -3406,7 +3376,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: pico-sdk/lib/tinyusb/src/class/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -3414,7 +3384,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: pico-sdk/lib/tinyusb/src/clas
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -3422,7 +3392,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: pico-sdk/lib/tinyusb/src/class/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -3430,7 +3400,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: pico-sdk/lib/tinyusb/src/class/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -3438,7 +3408,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: pico-sdk/lib/tinyusb/src/c
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -3446,7 +3416,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: pico-sdk/lib/tinyusb/src/cla
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -3454,7 +3424,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: pico-sdk/lib/tinyusb/src/cla
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -3462,7 +3432,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: pico-sdk/lib/tinyusb/src/clas
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -3470,7 +3440,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: pico-sdk/lib/tinyusb/src/class/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -3478,7 +3448,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: pico-sdk/lib/tinyusb/src/class/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -3486,7 +3456,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: pico-sdk/lib/tinyusb/src/cl
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -3494,7 +3464,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: pico-sdk/lib/tinyusb/src/clas
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -3502,7 +3472,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: pico-sdk/lib/tinyusb/src/clas
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -3510,7 +3480,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: pico-sdk/lib/tinyusb/src/clas
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -3518,7 +3488,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: pico-sdk/lib/tinyusb/src/class/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -3526,7 +3496,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: pico-sdk/lib/tinyusb/src/class/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -3534,7 +3504,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: pico-sdk/lib/tinyusb/sr
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -3542,7 +3512,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: pico-sdk/lib/tinyusb/src/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -3550,7 +3520,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: pico-sdk/lib/tinyusb/src/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -3558,7 +3528,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: pico-sdk/lib/tinyusb/src/clas
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -3566,7 +3536,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: pico-sdk/lib/tinyusb/src/class/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -3574,7 +3544,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: pico-sdk/lib/tinyusb/src/class/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -3582,7 +3552,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: pico-sdk/lib/tinyusb/sr
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -3590,7 +3560,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: pico-sdk/lib/tinyusb/src/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -3598,7 +3568,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: pico-sdk/lib/tinyusb/src/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -3606,7 +3576,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: pico-sdk/lib/tinyusb/sr
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -3614,7 +3584,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: pico-sdk/lib/tinyusb/src/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -3622,7 +3592,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: pico-sdk/lib/tinyusb/src/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.obj: pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -3630,7 +3600,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.obj: pico-sdk/lib/tinyusb/src/
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.i: pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -3638,7 +3608,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.i: pico-sdk/lib/tinyusb/src/cl
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.s: pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -3646,7 +3616,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.s: pico-sdk/lib/tinyusb/src/cl
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -3654,7 +3624,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: pico-sdk/lib/tinyusb/src/common/t
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -3662,7 +3632,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: pico-sdk/lib/tinyusb/src/common/tus
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -3670,7 +3640,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: pico-sdk/lib/tinyusb/src/common/tus
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 pico-sdk/lib/tinyusb/src/device/usbd.obj: pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -3678,7 +3648,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.obj: pico-sdk/lib/tinyusb/src/device/usbd.c
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 pico-sdk/lib/tinyusb/src/device/usbd.i: pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -3686,7 +3656,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.i: pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 pico-sdk/lib/tinyusb/src/device/usbd.s: pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -3694,7 +3664,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.s: pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.obj: pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -3702,7 +3672,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.obj: pico-sdk/lib/tinyusb/src/devic
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.i: pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -3710,7 +3680,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.i: pico-sdk/lib/tinyusb/src/device/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.s: pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -3718,7 +3688,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.s: pico-sdk/lib/tinyusb/src/device/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -3726,7 +3696,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: pico-sdk/li
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -3734,7 +3704,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: pico-sdk/lib/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -3742,7 +3712,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: pico-sdk/lib/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -3750,7 +3720,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: pico-sdk/li
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -3758,7 +3728,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: pico-sdk/lib/
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -3766,7 +3736,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: pico-sdk/lib/
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 pico-sdk/lib/tinyusb/src/tusb.obj: pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -3774,7 +3744,7 @@ pico-sdk/lib/tinyusb/src/tusb.obj: pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 pico-sdk/lib/tinyusb/src/tusb.i: pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -3782,7 +3752,7 @@ pico-sdk/lib/tinyusb/src/tusb.i: pico-sdk/lib/tinyusb/src/tusb.c.i
 
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.i
 
 pico-sdk/lib/tinyusb/src/tusb.s: pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -3790,7 +3760,7 @@ pico-sdk/lib/tinyusb/src/tusb.s: pico-sdk/lib/tinyusb/src/tusb.c.s
 
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.s
 
 pico-sdk/src/common/pico_sync/critical_section.obj: pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -3798,7 +3768,7 @@ pico-sdk/src/common/pico_sync/critical_section.obj: pico-sdk/src/common/pico_syn
 
 # target to build an object file
 pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 pico-sdk/src/common/pico_sync/critical_section.i: pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -3806,7 +3776,7 @@ pico-sdk/src/common/pico_sync/critical_section.i: pico-sdk/src/common/pico_sync/
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.i
 
 pico-sdk/src/common/pico_sync/critical_section.s: pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -3814,7 +3784,7 @@ pico-sdk/src/common/pico_sync/critical_section.s: pico-sdk/src/common/pico_sync/
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.s
 
 pico-sdk/src/common/pico_sync/lock_core.obj: pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -3822,7 +3792,7 @@ pico-sdk/src/common/pico_sync/lock_core.obj: pico-sdk/src/common/pico_sync/lock_
 
 # target to build an object file
 pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 pico-sdk/src/common/pico_sync/lock_core.i: pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -3830,7 +3800,7 @@ pico-sdk/src/common/pico_sync/lock_core.i: pico-sdk/src/common/pico_sync/lock_co
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.i
 
 pico-sdk/src/common/pico_sync/lock_core.s: pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -3838,7 +3808,7 @@ pico-sdk/src/common/pico_sync/lock_core.s: pico-sdk/src/common/pico_sync/lock_co
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.s
 
 pico-sdk/src/common/pico_sync/mutex.obj: pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -3846,7 +3816,7 @@ pico-sdk/src/common/pico_sync/mutex.obj: pico-sdk/src/common/pico_sync/mutex.c.o
 
 # target to build an object file
 pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.obj
 
 pico-sdk/src/common/pico_sync/mutex.i: pico-sdk/src/common/pico_sync/mutex.c.i
@@ -3854,7 +3824,7 @@ pico-sdk/src/common/pico_sync/mutex.i: pico-sdk/src/common/pico_sync/mutex.c.i
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.i
 
 pico-sdk/src/common/pico_sync/mutex.s: pico-sdk/src/common/pico_sync/mutex.c.s
@@ -3862,7 +3832,7 @@ pico-sdk/src/common/pico_sync/mutex.s: pico-sdk/src/common/pico_sync/mutex.c.s
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.s
 
 pico-sdk/src/common/pico_sync/sem.obj: pico-sdk/src/common/pico_sync/sem.c.obj
@@ -3870,7 +3840,7 @@ pico-sdk/src/common/pico_sync/sem.obj: pico-sdk/src/common/pico_sync/sem.c.obj
 
 # target to build an object file
 pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.obj
 
 pico-sdk/src/common/pico_sync/sem.i: pico-sdk/src/common/pico_sync/sem.c.i
@@ -3878,7 +3848,7 @@ pico-sdk/src/common/pico_sync/sem.i: pico-sdk/src/common/pico_sync/sem.c.i
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.i
 
 pico-sdk/src/common/pico_sync/sem.s: pico-sdk/src/common/pico_sync/sem.c.s
@@ -3886,7 +3856,7 @@ pico-sdk/src/common/pico_sync/sem.s: pico-sdk/src/common/pico_sync/sem.c.s
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.s
 
 pico-sdk/src/common/pico_time/time.obj: pico-sdk/src/common/pico_time/time.c.obj
@@ -3894,7 +3864,7 @@ pico-sdk/src/common/pico_time/time.obj: pico-sdk/src/common/pico_time/time.c.obj
 
 # target to build an object file
 pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : pico-sdk/src/common/pico_time/time.c.obj
 
 pico-sdk/src/common/pico_time/time.i: pico-sdk/src/common/pico_time/time.c.i
@@ -3902,7 +3872,7 @@ pico-sdk/src/common/pico_time/time.i: pico-sdk/src/common/pico_time/time.c.i
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : pico-sdk/src/common/pico_time/time.c.i
 
 pico-sdk/src/common/pico_time/time.s: pico-sdk/src/common/pico_time/time.c.s
@@ -3910,7 +3880,7 @@ pico-sdk/src/common/pico_time/time.s: pico-sdk/src/common/pico_time/time.c.s
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : pico-sdk/src/common/pico_time/time.c.s
 
 pico-sdk/src/common/pico_time/timeout_helper.obj: pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -3918,7 +3888,7 @@ pico-sdk/src/common/pico_time/timeout_helper.obj: pico-sdk/src/common/pico_time/
 
 # target to build an object file
 pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 pico-sdk/src/common/pico_time/timeout_helper.i: pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -3926,7 +3896,7 @@ pico-sdk/src/common/pico_time/timeout_helper.i: pico-sdk/src/common/pico_time/ti
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 pico-sdk/src/common/pico_time/timeout_helper.s: pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -3934,7 +3904,7 @@ pico-sdk/src/common/pico_time/timeout_helper.s: pico-sdk/src/common/pico_time/ti
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 pico-sdk/src/common/pico_util/datetime.obj: pico-sdk/src/common/pico_util/datetime.c.obj
@@ -3942,7 +3912,7 @@ pico-sdk/src/common/pico_util/datetime.obj: pico-sdk/src/common/pico_util/dateti
 
 # target to build an object file
 pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.obj
 
 pico-sdk/src/common/pico_util/datetime.i: pico-sdk/src/common/pico_util/datetime.c.i
@@ -3950,7 +3920,7 @@ pico-sdk/src/common/pico_util/datetime.i: pico-sdk/src/common/pico_util/datetime
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.i
 
 pico-sdk/src/common/pico_util/datetime.s: pico-sdk/src/common/pico_util/datetime.c.s
@@ -3958,7 +3928,7 @@ pico-sdk/src/common/pico_util/datetime.s: pico-sdk/src/common/pico_util/datetime
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.s
 
 pico-sdk/src/common/pico_util/pheap.obj: pico-sdk/src/common/pico_util/pheap.c.obj
@@ -3966,7 +3936,7 @@ pico-sdk/src/common/pico_util/pheap.obj: pico-sdk/src/common/pico_util/pheap.c.o
 
 # target to build an object file
 pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.obj
 
 pico-sdk/src/common/pico_util/pheap.i: pico-sdk/src/common/pico_util/pheap.c.i
@@ -3974,7 +3944,7 @@ pico-sdk/src/common/pico_util/pheap.i: pico-sdk/src/common/pico_util/pheap.c.i
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.i
 
 pico-sdk/src/common/pico_util/pheap.s: pico-sdk/src/common/pico_util/pheap.c.s
@@ -3982,7 +3952,7 @@ pico-sdk/src/common/pico_util/pheap.s: pico-sdk/src/common/pico_util/pheap.c.s
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.s
 
 pico-sdk/src/common/pico_util/queue.obj: pico-sdk/src/common/pico_util/queue.c.obj
@@ -3990,7 +3960,7 @@ pico-sdk/src/common/pico_util/queue.obj: pico-sdk/src/common/pico_util/queue.c.o
 
 # target to build an object file
 pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : pico-sdk/src/common/pico_util/queue.c.obj
 
 pico-sdk/src/common/pico_util/queue.i: pico-sdk/src/common/pico_util/queue.c.i
@@ -3998,7 +3968,7 @@ pico-sdk/src/common/pico_util/queue.i: pico-sdk/src/common/pico_util/queue.c.i
 
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : pico-sdk/src/common/pico_util/queue.c.i
 
 pico-sdk/src/common/pico_util/queue.s: pico-sdk/src/common/pico_util/queue.c.s
@@ -4006,7 +3976,7 @@ pico-sdk/src/common/pico_util/queue.s: pico-sdk/src/common/pico_util/queue.c.s
 
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : pico-sdk/src/common/pico_util/queue.c.s
 
 pico-sdk/src/rp2_common/hardware_claim/claim.obj: pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -4014,7 +3984,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.obj: pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 pico-sdk/src/rp2_common/hardware_claim/claim.i: pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -4022,7 +3992,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.i: pico-sdk/src/rp2_common/hardware
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 pico-sdk/src/rp2_common/hardware_claim/claim.s: pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -4030,7 +4000,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.s: pico-sdk/src/rp2_common/hardware
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -4038,7 +4008,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: pico-sdk/src/rp2_common/hard
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.i: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -4046,7 +4016,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.i: pico-sdk/src/rp2_common/hardwa
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.s: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -4054,7 +4024,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.s: pico-sdk/src/rp2_common/hardwa
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 pico-sdk/src/rp2_common/hardware_divider/divider.obj: pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -4062,7 +4032,7 @@ pico-sdk/src/rp2_common/hardware_divider/divider.obj: pico-sdk/src/rp2_common/ha
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 pico-sdk/src/rp2_common/hardware_dma/dma.obj: pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -4070,7 +4040,7 @@ pico-sdk/src/rp2_common/hardware_dma/dma.obj: pico-sdk/src/rp2_common/hardware_d
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
 pico-sdk/src/rp2_common/hardware_dma/dma.i: pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -4078,7 +4048,7 @@ pico-sdk/src/rp2_common/hardware_dma/dma.i: pico-sdk/src/rp2_common/hardware_dma
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 pico-sdk/src/rp2_common/hardware_dma/dma.s: pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -4086,7 +4056,7 @@ pico-sdk/src/rp2_common/hardware_dma/dma.s: pico-sdk/src/rp2_common/hardware_dma
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 pico-sdk/src/rp2_common/hardware_exception/exception.obj: pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
@@ -4094,7 +4064,7 @@ pico-sdk/src/rp2_common/hardware_exception/exception.obj: pico-sdk/src/rp2_commo
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 
 pico-sdk/src/rp2_common/hardware_exception/exception.i: pico-sdk/src/rp2_common/hardware_exception/exception.c.i
@@ -4102,7 +4072,7 @@ pico-sdk/src/rp2_common/hardware_exception/exception.i: pico-sdk/src/rp2_common/
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 
 pico-sdk/src/rp2_common/hardware_exception/exception.s: pico-sdk/src/rp2_common/hardware_exception/exception.c.s
@@ -4110,7 +4080,7 @@ pico-sdk/src/rp2_common/hardware_exception/exception.s: pico-sdk/src/rp2_common/
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 pico-sdk/src/rp2_common/hardware_flash/flash.obj: pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -4118,7 +4088,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.obj: pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 pico-sdk/src/rp2_common/hardware_flash/flash.i: pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -4126,7 +4096,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.i: pico-sdk/src/rp2_common/hardware
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 pico-sdk/src/rp2_common/hardware_flash/flash.s: pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -4134,7 +4104,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.s: pico-sdk/src/rp2_common/hardware
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -4142,7 +4112,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: pico-sdk/src/rp2_common/hardware
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.i: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -4150,7 +4120,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.i: pico-sdk/src/rp2_common/hardware_g
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.s: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -4158,7 +4128,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.s: pico-sdk/src/rp2_common/hardware_g
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 pico-sdk/src/rp2_common/hardware_irq/irq.obj: pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -4166,7 +4136,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.obj: pico-sdk/src/rp2_common/hardware_i
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 pico-sdk/src/rp2_common/hardware_irq/irq.i: pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -4174,7 +4144,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.i: pico-sdk/src/rp2_common/hardware_irq
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 pico-sdk/src/rp2_common/hardware_irq/irq.s: pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -4182,7 +4152,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.s: pico-sdk/src/rp2_common/hardware_irq
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -4190,7 +4160,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: pico-sdk/src/rp2_com
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 pico-sdk/src/rp2_common/hardware_pio/pio.obj: pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
@@ -4198,7 +4168,7 @@ pico-sdk/src/rp2_common/hardware_pio/pio.obj: pico-sdk/src/rp2_common/hardware_p
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
 pico-sdk/src/rp2_common/hardware_pio/pio.i: pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -4206,7 +4176,7 @@ pico-sdk/src/rp2_common/hardware_pio/pio.i: pico-sdk/src/rp2_common/hardware_pio
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 pico-sdk/src/rp2_common/hardware_pio/pio.s: pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -4214,7 +4184,7 @@ pico-sdk/src/rp2_common/hardware_pio/pio.s: pico-sdk/src/rp2_common/hardware_pio
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 pico-sdk/src/rp2_common/hardware_pll/pll.obj: pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -4222,7 +4192,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.obj: pico-sdk/src/rp2_common/hardware_p
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 pico-sdk/src/rp2_common/hardware_pll/pll.i: pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -4230,7 +4200,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.i: pico-sdk/src/rp2_common/hardware_pll
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 pico-sdk/src/rp2_common/hardware_pll/pll.s: pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -4238,7 +4208,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.s: pico-sdk/src/rp2_common/hardware_pll
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 pico-sdk/src/rp2_common/hardware_sync/sync.obj: pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -4246,7 +4216,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.obj: pico-sdk/src/rp2_common/hardware
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 pico-sdk/src/rp2_common/hardware_sync/sync.i: pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -4254,7 +4224,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.i: pico-sdk/src/rp2_common/hardware_s
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 pico-sdk/src/rp2_common/hardware_sync/sync.s: pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -4262,7 +4232,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.s: pico-sdk/src/rp2_common/hardware_s
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 pico-sdk/src/rp2_common/hardware_timer/timer.obj: pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -4270,7 +4240,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.obj: pico-sdk/src/rp2_common/hardwa
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 pico-sdk/src/rp2_common/hardware_timer/timer.i: pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -4278,7 +4248,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.i: pico-sdk/src/rp2_common/hardware
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 pico-sdk/src/rp2_common/hardware_timer/timer.s: pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -4286,7 +4256,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.s: pico-sdk/src/rp2_common/hardware
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 pico-sdk/src/rp2_common/hardware_uart/uart.obj: pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -4294,7 +4264,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.obj: pico-sdk/src/rp2_common/hardware
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 pico-sdk/src/rp2_common/hardware_uart/uart.i: pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -4302,7 +4272,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.i: pico-sdk/src/rp2_common/hardware_u
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 pico-sdk/src/rp2_common/hardware_uart/uart.s: pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -4310,7 +4280,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.s: pico-sdk/src/rp2_common/hardware_u
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -4318,7 +4288,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: pico-sdk/src/rp2_common/hardware
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.i: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -4326,7 +4296,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.i: pico-sdk/src/rp2_common/hardware_v
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.s: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -4334,7 +4304,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.s: pico-sdk/src/rp2_common/hardware_v
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -4342,7 +4312,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: pico-sdk/src/rp2_common/
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -4350,7 +4320,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: pico-sdk/src/rp2_common/ha
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -4358,7 +4328,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: pico-sdk/src/rp2_common/ha
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -4366,7 +4336,7 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: pico-sdk/src/rp2_common/hardware
 
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.i: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -4374,7 +4344,7 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.i: pico-sdk/src/rp2_common/hardware_x
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.s: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -4382,7 +4352,7 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.s: pico-sdk/src/rp2_common/hardware_x
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
@@ -4390,7 +4360,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: pico-sdk/src/
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
@@ -4398,7 +4368,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: pico-sdk/src/rp
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
@@ -4406,7 +4376,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: pico-sdk/src/rp
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
@@ -4414,7 +4384,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.o
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
@@ -4422,7 +4392,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
@@ -4430,7 +4400,7 @@ pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 
 pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -4438,7 +4408,7 @@ pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: pico-sdk/src/rp2_common/
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -4446,7 +4416,7 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: pico-sdk/src/rp2_common/pico_b
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -4454,7 +4424,7 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: pico-sdk/src/rp2_common/pico_boo
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -4462,7 +4432,7 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: pico-sdk/src/rp2_common/pico_boo
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
@@ -4470,7 +4440,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: pico-sdk/src/rp2_common/
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
@@ -4478,7 +4448,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: pico-sdk/src/rp2_common/pi
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
@@ -4486,7 +4456,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: pico-sdk/src/rp2_common/pi
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
@@ -4494,7 +4464,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: pico-sdk/src/rp
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
@@ -4502,7 +4472,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: pico-sdk/src/rp2_
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
@@ -4510,7 +4480,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: pico-sdk/src/rp2_
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
@@ -4518,7 +4488,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: pico-sdk/src/rp2_co
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
@@ -4526,7 +4496,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: pico-sdk/src/rp2_comm
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
@@ -4534,7 +4504,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: pico-sdk/src/rp2_comm
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
@@ -4542,7 +4512,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: pi
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
@@ -4550,7 +4520,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: pico
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
@@ -4558,7 +4528,7 @@ pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: pico
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
@@ -4566,7 +4536,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: p
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
@@ -4574,7 +4544,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: pic
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
@@ -4582,7 +4552,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: pic
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
@@ -4590,7 +4560,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
@@ -4598,7 +4568,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
@@ -4606,7 +4576,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
@@ -4614,7 +4584,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: pico-sdk/src/rp
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
@@ -4622,7 +4592,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: pico-sdk/src/rp2_
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
@@ -4630,7 +4600,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: pico-sdk/src/rp2_
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
@@ -4638,7 +4608,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: pico-sdk/src/rp2_com
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
@@ -4646,7 +4616,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
@@ -4654,7 +4624,7 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 pico-sdk/src/rp2_common/pico_divider/divider.obj: pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -4662,7 +4632,7 @@ pico-sdk/src/rp2_common/pico_divider/divider.obj: pico-sdk/src/rp2_common/pico_d
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -4670,7 +4640,7 @@ pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: pico-sdk/src/rp2_common/pi
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -4678,7 +4648,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: pico-sdk/src/rp2_common
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.i: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -4686,7 +4656,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.i: pico-sdk/src/rp2_common/p
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.s: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -4694,7 +4664,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.s: pico-sdk/src/rp2_common/p
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 pico-sdk/src/rp2_common/pico_double/double_math.obj: pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -4702,7 +4672,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.obj: pico-sdk/src/rp2_common/pic
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 pico-sdk/src/rp2_common/pico_double/double_math.i: pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -4710,7 +4680,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.i: pico-sdk/src/rp2_common/pico_
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 pico-sdk/src/rp2_common/pico_double/double_math.s: pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -4718,7 +4688,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.s: pico-sdk/src/rp2_common/pico_
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -4726,7 +4696,7 @@ pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: pico-sdk/src/rp2_com
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -4734,7 +4704,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -4742,7 +4712,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -4750,7 +4720,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -4758,7 +4728,7 @@ pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -4766,7 +4736,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: pico-sdk/src/rp2_common/p
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.i: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -4774,7 +4744,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.i: pico-sdk/src/rp2_common/pic
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.s: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -4782,7 +4752,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.s: pico-sdk/src/rp2_common/pic
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_math.obj: pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -4790,7 +4760,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.obj: pico-sdk/src/rp2_common/pico_
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 pico-sdk/src/rp2_common/pico_float/float_math.i: pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -4798,7 +4768,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.i: pico-sdk/src/rp2_common/pico_fl
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 pico-sdk/src/rp2_common/pico_float/float_math.s: pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -4806,7 +4776,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.s: pico-sdk/src/rp2_common/pico_fl
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -4814,7 +4784,7 @@ pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: pico-sdk/src/rp2_commo
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -4822,7 +4792,7 @@ pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: pico-sdk/src/rp
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -4830,7 +4800,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: pico-sdk/src/rp2_common/pic
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -4838,7 +4808,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: pico-sdk/src/rp2_common/pico_
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -4846,7 +4816,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: pico-sdk/src/rp2_common/pico_
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -4854,7 +4824,7 @@ pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: pico-sdk/src/rp2_common/
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_multicore/multicore.obj: pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
@@ -4862,7 +4832,7 @@ pico-sdk/src/rp2_common/pico_multicore/multicore.obj: pico-sdk/src/rp2_common/pi
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 
 pico-sdk/src/rp2_common/pico_multicore/multicore.i: pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
@@ -4870,7 +4840,7 @@ pico-sdk/src/rp2_common/pico_multicore/multicore.i: pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
 pico-sdk/src/rp2_common/pico_multicore/multicore.s: pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
@@ -4878,7 +4848,7 @@ pico-sdk/src/rp2_common/pico_multicore/multicore.s: pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 pico-sdk/src/rp2_common/pico_platform/platform.obj: pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -4886,7 +4856,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.obj: pico-sdk/src/rp2_common/pico
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 pico-sdk/src/rp2_common/pico_platform/platform.i: pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -4894,7 +4864,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.i: pico-sdk/src/rp2_common/pico_p
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 pico-sdk/src/rp2_common/pico_platform/platform.s: pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -4902,7 +4872,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.s: pico-sdk/src/rp2_common/pico_p
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 pico-sdk/src/rp2_common/pico_printf/printf.obj: pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -4910,7 +4880,7 @@ pico-sdk/src/rp2_common/pico_printf/printf.obj: pico-sdk/src/rp2_common/pico_pri
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 pico-sdk/src/rp2_common/pico_printf/printf.i: pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -4918,7 +4888,7 @@ pico-sdk/src/rp2_common/pico_printf/printf.i: pico-sdk/src/rp2_common/pico_print
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 pico-sdk/src/rp2_common/pico_printf/printf.s: pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -4926,7 +4896,7 @@ pico-sdk/src/rp2_common/pico_printf/printf.s: pico-sdk/src/rp2_common/pico_print
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.obj: pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -4934,7 +4904,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.obj: pico-sdk/src/rp2_common/pico_r
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.i: pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -4942,7 +4912,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.i: pico-sdk/src/rp2_common/pico_run
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.s: pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -4950,7 +4920,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.s: pico-sdk/src/rp2_common/pico_run
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -4958,7 +4928,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: pico-sdk/src/rp2_com
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -4966,7 +4936,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -4974,7 +4944,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -4982,7 +4952,7 @@ pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: pico-sdk/src/rp2_common/pic
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -4990,7 +4960,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: pico-sdk/src/rp2_comm
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -4998,7 +4968,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: pico-sdk/src/rp2_common
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -5006,7 +4976,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: pico-sdk/src/rp2_common
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.obj: pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -5014,7 +4984,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.obj: pico-sdk/src/rp2_common/pico_stdio
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.i: pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -5022,7 +4992,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.i: pico-sdk/src/rp2_common/pico_stdio/s
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.s: pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -5030,7 +5000,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.s: pico-sdk/src/rp2_common/pico_stdio/s
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -5038,7 +5008,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: pico-sdk/src/rp2_common/pico_std
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -5046,7 +5016,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: pico-sdk/src/rp2_common/pico_stdli
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -5054,7 +5024,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: pico-sdk/src/rp2_common/pico_stdli
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -5062,7 +5032,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: pico-sdk/src/rp2_common/pi
 
 # target to build an object file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -5070,7 +5040,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: pico-sdk/src/rp2_common/pico
 
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -5078,7 +5048,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: pico-sdk/src/rp2_common/pico
 
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 usb_descriptors.obj: usb_descriptors.c.obj
@@ -5086,7 +5056,7 @@ usb_descriptors.obj: usb_descriptors.c.obj
 
 # target to build an object file
 usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.obj
 .PHONY : usb_descriptors.c.obj
 
 usb_descriptors.i: usb_descriptors.c.i
@@ -5094,7 +5064,7 @@ usb_descriptors.i: usb_descriptors.c.i
 
 # target to preprocess a source file
 usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.i
 .PHONY : usb_descriptors.c.i
 
 usb_descriptors.s: usb_descriptors.c.s
@@ -5102,32 +5072,8 @@ usb_descriptors.s: usb_descriptors.c.s
 
 # target to generate assembly for a file
 usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico-wifi-adapter.dir/build.make CMakeFiles/pico-wifi-adapter.dir/usb_descriptors.c.s
 .PHONY : usb_descriptors.c.s
-
-wifi_code.obj: wifi_code.c.obj
-.PHONY : wifi_code.obj
-
-# target to build an object file
-wifi_code.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.obj
-.PHONY : wifi_code.c.obj
-
-wifi_code.i: wifi_code.c.i
-.PHONY : wifi_code.i
-
-# target to preprocess a source file
-wifi_code.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.i
-.PHONY : wifi_code.c.i
-
-wifi_code.s: wifi_code.c.s
-.PHONY : wifi_code.s
-
-# target to generate assembly for a file
-wifi_code.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.s
-.PHONY : wifi_code.c.s
 
 # Help Target
 help:
@@ -5147,10 +5093,13 @@ help:
 	@echo "... lwipallapps"
 	@echo "... lwipcore"
 	@echo "... lwipmbedtls"
-	@echo "... picow-usb-composite-wifi-adapter"
+	@echo "... pico-wifi-adapter"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... msc_disk.obj"
+	@echo "... msc_disk.i"
+	@echo "... msc_disk.s"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
@@ -5529,9 +5478,6 @@ help:
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.i"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.s"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -5750,9 +5696,6 @@ help:
 	@echo "... usb_descriptors.obj"
 	@echo "... usb_descriptors.i"
 	@echo "... usb_descriptors.s"
-	@echo "... wifi_code.obj"
-	@echo "... wifi_code.i"
-	@echo "... wifi_code.s"
 .PHONY : help
 
 

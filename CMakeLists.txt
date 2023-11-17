@@ -19,7 +19,7 @@ set(TINYUSB_LIBNETWORKING_SOURCES
 	${PICO_TINYUSB_PATH}/lib/networking
 )
 
-add_executable(${PROJECT_NAME} main.c ${PICO_TINYUSB_PATH}/src/class/cdc/cdc_device.c usb_descriptors.c)
+add_executable(${PROJECT_NAME} main.c msc_disk.c ${PICO_TINYUSB_PATH}/src/class/cdc/cdc_device.c usb_descriptors.c)
 
 pico_enable_stdio_usb(${PROJECT_NAME} 0)
 pico_enable_stdio_uart(${PROJECT_NAME} 0)

@@ -283,30 +283,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.s
 .PHONY : main.c.s
 
-msc_disk.obj: msc_disk.c.obj
-.PHONY : msc_disk.obj
-
-# target to build an object file
-msc_disk.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/msc_disk.c.obj
-.PHONY : msc_disk.c.obj
-
-msc_disk.i: msc_disk.c.i
-.PHONY : msc_disk.i
-
-# target to preprocess a source file
-msc_disk.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/msc_disk.c.i
-.PHONY : msc_disk.c.i
-
-msc_disk.s: msc_disk.c.s
-.PHONY : msc_disk.s
-
-# target to generate assembly for a file
-msc_disk.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/msc_disk.c.s
-.PHONY : msc_disk.c.s
-
 pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
 .PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj
 
@@ -697,7 +673,6 @@ pico-sdk/lib/lwip/src/apps/http/fs.obj: pico-sdk/lib/lwip/src/apps/http/fs.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/apps/http/fs.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.obj
 .PHONY : pico-sdk/lib/lwip/src/apps/http/fs.c.obj
 
 pico-sdk/lib/lwip/src/apps/http/fs.i: pico-sdk/lib/lwip/src/apps/http/fs.c.i
@@ -706,7 +681,6 @@ pico-sdk/lib/lwip/src/apps/http/fs.i: pico-sdk/lib/lwip/src/apps/http/fs.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/apps/http/fs.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.i
 .PHONY : pico-sdk/lib/lwip/src/apps/http/fs.c.i
 
 pico-sdk/lib/lwip/src/apps/http/fs.s: pico-sdk/lib/lwip/src/apps/http/fs.c.s
@@ -715,7 +689,6 @@ pico-sdk/lib/lwip/src/apps/http/fs.s: pico-sdk/lib/lwip/src/apps/http/fs.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/apps/http/fs.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipallapps.dir/build.make CMakeFiles/lwipallapps.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.s
 .PHONY : pico-sdk/lib/lwip/src/apps/http/fs.c.s
 
 pico-sdk/lib/lwip/src/apps/http/http_client.obj: pico-sdk/lib/lwip/src/apps/http/http_client.c.obj
@@ -1519,7 +1492,6 @@ pico-sdk/lib/lwip/src/core/altcp.obj: pico-sdk/lib/lwip/src/core/altcp.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/altcp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/altcp.c.obj
 
 pico-sdk/lib/lwip/src/core/altcp.i: pico-sdk/lib/lwip/src/core/altcp.c.i
@@ -1528,7 +1500,6 @@ pico-sdk/lib/lwip/src/core/altcp.i: pico-sdk/lib/lwip/src/core/altcp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/altcp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/altcp.c.i
 
 pico-sdk/lib/lwip/src/core/altcp.s: pico-sdk/lib/lwip/src/core/altcp.c.s
@@ -1537,7 +1508,6 @@ pico-sdk/lib/lwip/src/core/altcp.s: pico-sdk/lib/lwip/src/core/altcp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/altcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/altcp.c.s
 
 pico-sdk/lib/lwip/src/core/altcp_alloc.obj: pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
@@ -1546,7 +1516,6 @@ pico-sdk/lib/lwip/src/core/altcp_alloc.obj: pico-sdk/lib/lwip/src/core/altcp_all
 # target to build an object file
 pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
 
 pico-sdk/lib/lwip/src/core/altcp_alloc.i: pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
@@ -1555,7 +1524,6 @@ pico-sdk/lib/lwip/src/core/altcp_alloc.i: pico-sdk/lib/lwip/src/core/altcp_alloc
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/altcp_alloc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
 
 pico-sdk/lib/lwip/src/core/altcp_alloc.s: pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
@@ -1564,7 +1532,6 @@ pico-sdk/lib/lwip/src/core/altcp_alloc.s: pico-sdk/lib/lwip/src/core/altcp_alloc
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 
 pico-sdk/lib/lwip/src/core/altcp_tcp.obj: pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
@@ -1573,7 +1540,6 @@ pico-sdk/lib/lwip/src/core/altcp_tcp.obj: pico-sdk/lib/lwip/src/core/altcp_tcp.c
 # target to build an object file
 pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
 
 pico-sdk/lib/lwip/src/core/altcp_tcp.i: pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
@@ -1582,7 +1548,6 @@ pico-sdk/lib/lwip/src/core/altcp_tcp.i: pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/altcp_tcp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 
 pico-sdk/lib/lwip/src/core/altcp_tcp.s: pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
@@ -1591,7 +1556,6 @@ pico-sdk/lib/lwip/src/core/altcp_tcp.s: pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 
 pico-sdk/lib/lwip/src/core/def.obj: pico-sdk/lib/lwip/src/core/def.c.obj
@@ -1600,7 +1564,6 @@ pico-sdk/lib/lwip/src/core/def.obj: pico-sdk/lib/lwip/src/core/def.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/def.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/def.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/def.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/def.c.obj
 
 pico-sdk/lib/lwip/src/core/def.i: pico-sdk/lib/lwip/src/core/def.c.i
@@ -1609,7 +1572,6 @@ pico-sdk/lib/lwip/src/core/def.i: pico-sdk/lib/lwip/src/core/def.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/def.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/def.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/def.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/def.c.i
 
 pico-sdk/lib/lwip/src/core/def.s: pico-sdk/lib/lwip/src/core/def.c.s
@@ -1618,7 +1580,6 @@ pico-sdk/lib/lwip/src/core/def.s: pico-sdk/lib/lwip/src/core/def.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/def.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/def.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/def.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/def.c.s
 
 pico-sdk/lib/lwip/src/core/dns.obj: pico-sdk/lib/lwip/src/core/dns.c.obj
@@ -1627,7 +1588,6 @@ pico-sdk/lib/lwip/src/core/dns.obj: pico-sdk/lib/lwip/src/core/dns.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/dns.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/dns.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/dns.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/dns.c.obj
 
 pico-sdk/lib/lwip/src/core/dns.i: pico-sdk/lib/lwip/src/core/dns.c.i
@@ -1636,7 +1596,6 @@ pico-sdk/lib/lwip/src/core/dns.i: pico-sdk/lib/lwip/src/core/dns.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/dns.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/dns.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/dns.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/dns.c.i
 
 pico-sdk/lib/lwip/src/core/dns.s: pico-sdk/lib/lwip/src/core/dns.c.s
@@ -1645,7 +1604,6 @@ pico-sdk/lib/lwip/src/core/dns.s: pico-sdk/lib/lwip/src/core/dns.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/dns.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/dns.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/dns.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/dns.c.s
 
 pico-sdk/lib/lwip/src/core/inet_chksum.obj: pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
@@ -1654,7 +1612,6 @@ pico-sdk/lib/lwip/src/core/inet_chksum.obj: pico-sdk/lib/lwip/src/core/inet_chks
 # target to build an object file
 pico-sdk/lib/lwip/src/core/inet_chksum.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
 
 pico-sdk/lib/lwip/src/core/inet_chksum.i: pico-sdk/lib/lwip/src/core/inet_chksum.c.i
@@ -1663,7 +1620,6 @@ pico-sdk/lib/lwip/src/core/inet_chksum.i: pico-sdk/lib/lwip/src/core/inet_chksum
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/inet_chksum.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.i
 
 pico-sdk/lib/lwip/src/core/inet_chksum.s: pico-sdk/lib/lwip/src/core/inet_chksum.c.s
@@ -1672,7 +1628,6 @@ pico-sdk/lib/lwip/src/core/inet_chksum.s: pico-sdk/lib/lwip/src/core/inet_chksum
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 
 pico-sdk/lib/lwip/src/core/init.obj: pico-sdk/lib/lwip/src/core/init.c.obj
@@ -1681,7 +1636,6 @@ pico-sdk/lib/lwip/src/core/init.obj: pico-sdk/lib/lwip/src/core/init.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/init.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/init.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/init.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/init.c.obj
 
 pico-sdk/lib/lwip/src/core/init.i: pico-sdk/lib/lwip/src/core/init.c.i
@@ -1690,7 +1644,6 @@ pico-sdk/lib/lwip/src/core/init.i: pico-sdk/lib/lwip/src/core/init.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/init.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/init.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/init.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/init.c.i
 
 pico-sdk/lib/lwip/src/core/init.s: pico-sdk/lib/lwip/src/core/init.c.s
@@ -1699,7 +1652,6 @@ pico-sdk/lib/lwip/src/core/init.s: pico-sdk/lib/lwip/src/core/init.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/init.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/init.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/init.c.s
 
 pico-sdk/lib/lwip/src/core/ip.obj: pico-sdk/lib/lwip/src/core/ip.c.obj
@@ -1708,7 +1660,6 @@ pico-sdk/lib/lwip/src/core/ip.obj: pico-sdk/lib/lwip/src/core/ip.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ip.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ip.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ip.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ip.c.obj
 
 pico-sdk/lib/lwip/src/core/ip.i: pico-sdk/lib/lwip/src/core/ip.c.i
@@ -1717,7 +1668,6 @@ pico-sdk/lib/lwip/src/core/ip.i: pico-sdk/lib/lwip/src/core/ip.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ip.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ip.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ip.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ip.c.i
 
 pico-sdk/lib/lwip/src/core/ip.s: pico-sdk/lib/lwip/src/core/ip.c.s
@@ -1726,7 +1676,6 @@ pico-sdk/lib/lwip/src/core/ip.s: pico-sdk/lib/lwip/src/core/ip.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ip.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ip.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ip.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/acd.obj: pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
@@ -1759,7 +1708,6 @@ pico-sdk/lib/lwip/src/core/ipv4/autoip.obj: pico-sdk/lib/lwip/src/core/ipv4/auto
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/autoip.i: pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
@@ -1768,7 +1716,6 @@ pico-sdk/lib/lwip/src/core/ipv4/autoip.i: pico-sdk/lib/lwip/src/core/ipv4/autoip
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/autoip.s: pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
@@ -1777,7 +1724,6 @@ pico-sdk/lib/lwip/src/core/ipv4/autoip.s: pico-sdk/lib/lwip/src/core/ipv4/autoip
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
@@ -1786,7 +1732,6 @@ pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
@@ -1795,7 +1740,6 @@ pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
@@ -1804,7 +1748,6 @@ pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/etharp.obj: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
@@ -1813,7 +1756,6 @@ pico-sdk/lib/lwip/src/core/ipv4/etharp.obj: pico-sdk/lib/lwip/src/core/ipv4/etha
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/etharp.i: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
@@ -1822,7 +1764,6 @@ pico-sdk/lib/lwip/src/core/ipv4/etharp.i: pico-sdk/lib/lwip/src/core/ipv4/etharp
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/etharp.s: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
@@ -1831,7 +1772,6 @@ pico-sdk/lib/lwip/src/core/ipv4/etharp.s: pico-sdk/lib/lwip/src/core/ipv4/etharp
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/icmp.obj: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
@@ -1840,7 +1780,6 @@ pico-sdk/lib/lwip/src/core/ipv4/icmp.obj: pico-sdk/lib/lwip/src/core/ipv4/icmp.c
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/icmp.i: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
@@ -1849,7 +1788,6 @@ pico-sdk/lib/lwip/src/core/ipv4/icmp.i: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/icmp.s: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
@@ -1858,7 +1796,6 @@ pico-sdk/lib/lwip/src/core/ipv4/icmp.s: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/igmp.obj: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
@@ -1867,7 +1804,6 @@ pico-sdk/lib/lwip/src/core/ipv4/igmp.obj: pico-sdk/lib/lwip/src/core/ipv4/igmp.c
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/igmp.i: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
@@ -1876,7 +1812,6 @@ pico-sdk/lib/lwip/src/core/ipv4/igmp.i: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/igmp.s: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
@@ -1885,7 +1820,6 @@ pico-sdk/lib/lwip/src/core/ipv4/igmp.s: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
@@ -1894,7 +1828,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4.i: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
@@ -1903,7 +1836,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4.i: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4.s: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
@@ -1912,7 +1844,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4.s: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
@@ -1921,7 +1852,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj: pico-sdk/lib/lwip/src/core/ipv4/ip
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
@@ -1930,7 +1860,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
@@ -1939,7 +1868,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
@@ -1948,7 +1876,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj: pico-sdk/lib/lwip/src/core/ipv4/ip
 # target to build an object file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
@@ -1957,7 +1884,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
 
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
@@ -1966,7 +1892,6 @@ pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 
 pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj: pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
@@ -2245,7 +2170,6 @@ pico-sdk/lib/lwip/src/core/netif.obj: pico-sdk/lib/lwip/src/core/netif.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/netif.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/netif.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/netif.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/netif.c.obj
 
 pico-sdk/lib/lwip/src/core/netif.i: pico-sdk/lib/lwip/src/core/netif.c.i
@@ -2254,7 +2178,6 @@ pico-sdk/lib/lwip/src/core/netif.i: pico-sdk/lib/lwip/src/core/netif.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/netif.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/netif.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/netif.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/netif.c.i
 
 pico-sdk/lib/lwip/src/core/netif.s: pico-sdk/lib/lwip/src/core/netif.c.s
@@ -2263,7 +2186,6 @@ pico-sdk/lib/lwip/src/core/netif.s: pico-sdk/lib/lwip/src/core/netif.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/netif.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/netif.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/netif.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/netif.c.s
 
 pico-sdk/lib/lwip/src/core/pbuf.obj: pico-sdk/lib/lwip/src/core/pbuf.c.obj
@@ -2407,7 +2329,6 @@ pico-sdk/lib/lwip/src/core/tcp_in.obj: pico-sdk/lib/lwip/src/core/tcp_in.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/tcp_in.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.obj
 
 pico-sdk/lib/lwip/src/core/tcp_in.i: pico-sdk/lib/lwip/src/core/tcp_in.c.i
@@ -2416,7 +2337,6 @@ pico-sdk/lib/lwip/src/core/tcp_in.i: pico-sdk/lib/lwip/src/core/tcp_in.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/tcp_in.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.i
 
 pico-sdk/lib/lwip/src/core/tcp_in.s: pico-sdk/lib/lwip/src/core/tcp_in.c.s
@@ -2425,7 +2345,6 @@ pico-sdk/lib/lwip/src/core/tcp_in.s: pico-sdk/lib/lwip/src/core/tcp_in.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/tcp_in.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.s
 
 pico-sdk/lib/lwip/src/core/tcp_out.obj: pico-sdk/lib/lwip/src/core/tcp_out.c.obj
@@ -2434,7 +2353,6 @@ pico-sdk/lib/lwip/src/core/tcp_out.obj: pico-sdk/lib/lwip/src/core/tcp_out.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/tcp_out.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.obj
 
 pico-sdk/lib/lwip/src/core/tcp_out.i: pico-sdk/lib/lwip/src/core/tcp_out.c.i
@@ -2443,7 +2361,6 @@ pico-sdk/lib/lwip/src/core/tcp_out.i: pico-sdk/lib/lwip/src/core/tcp_out.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/tcp_out.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.i
 
 pico-sdk/lib/lwip/src/core/tcp_out.s: pico-sdk/lib/lwip/src/core/tcp_out.c.s
@@ -2452,7 +2369,6 @@ pico-sdk/lib/lwip/src/core/tcp_out.s: pico-sdk/lib/lwip/src/core/tcp_out.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/tcp_out.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.s
 
 pico-sdk/lib/lwip/src/core/timeouts.obj: pico-sdk/lib/lwip/src/core/timeouts.c.obj
@@ -2488,7 +2404,6 @@ pico-sdk/lib/lwip/src/core/udp.obj: pico-sdk/lib/lwip/src/core/udp.c.obj
 # target to build an object file
 pico-sdk/lib/lwip/src/core/udp.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/udp.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/udp.c.obj
 .PHONY : pico-sdk/lib/lwip/src/core/udp.c.obj
 
 pico-sdk/lib/lwip/src/core/udp.i: pico-sdk/lib/lwip/src/core/udp.c.i
@@ -2497,7 +2412,6 @@ pico-sdk/lib/lwip/src/core/udp.i: pico-sdk/lib/lwip/src/core/udp.c.i
 # target to preprocess a source file
 pico-sdk/lib/lwip/src/core/udp.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/udp.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/udp.c.i
 .PHONY : pico-sdk/lib/lwip/src/core/udp.c.i
 
 pico-sdk/lib/lwip/src/core/udp.s: pico-sdk/lib/lwip/src/core/udp.c.s
@@ -2506,7 +2420,6 @@ pico-sdk/lib/lwip/src/core/udp.s: pico-sdk/lib/lwip/src/core/udp.c.s
 # target to generate assembly for a file
 pico-sdk/lib/lwip/src/core/udp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/core/udp.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/udp.c.s
 .PHONY : pico-sdk/lib/lwip/src/core/udp.c.s
 
 pico-sdk/lib/lwip/src/netif/bridgeif.obj: pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
@@ -3376,30 +3289,6 @@ pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lwipcore.dir/build.make CMakeFiles/lwipcore.dir/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 .PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 
-pico-sdk/lib/lwip/src/netif/slipif.obj: pico-sdk/lib/lwip/src/netif/slipif.c.obj
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.obj
-
-# target to build an object file
-pico-sdk/lib/lwip/src/netif/slipif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/slipif.c.obj
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.obj
-
-pico-sdk/lib/lwip/src/netif/slipif.i: pico-sdk/lib/lwip/src/netif/slipif.c.i
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.i
-
-# target to preprocess a source file
-pico-sdk/lib/lwip/src/netif/slipif.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/slipif.c.i
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.i
-
-pico-sdk/lib/lwip/src/netif/slipif.s: pico-sdk/lib/lwip/src/netif/slipif.c.s
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.s
-
-# target to generate assembly for a file
-pico-sdk/lib/lwip/src/netif/slipif.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/slipif.c.s
-.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.s
-
 pico-sdk/lib/lwip/src/netif/zepif.obj: pico-sdk/lib/lwip/src/netif/zepif.c.obj
 .PHONY : pico-sdk/lib/lwip/src/netif/zepif.obj
 
@@ -3447,54 +3336,6 @@ pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: pico-sdk/lib/tinyusb/hw/bsp/rp2040/
 pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 .PHONY : pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
-
-pico-sdk/lib/tinyusb/lib/networking/dhserver.obj: pico-sdk/lib/tinyusb/lib/networking/dhserver.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.obj
-
-# target to build an object file
-pico-sdk/lib/tinyusb/lib/networking/dhserver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dhserver.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.c.obj
-
-pico-sdk/lib/tinyusb/lib/networking/dhserver.i: pico-sdk/lib/tinyusb/lib/networking/dhserver.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.i
-
-# target to preprocess a source file
-pico-sdk/lib/tinyusb/lib/networking/dhserver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dhserver.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.c.i
-
-pico-sdk/lib/tinyusb/lib/networking/dhserver.s: pico-sdk/lib/tinyusb/lib/networking/dhserver.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.s
-
-# target to generate assembly for a file
-pico-sdk/lib/tinyusb/lib/networking/dhserver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dhserver.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dhserver.c.s
-
-pico-sdk/lib/tinyusb/lib/networking/dnserver.obj: pico-sdk/lib/tinyusb/lib/networking/dnserver.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.obj
-
-# target to build an object file
-pico-sdk/lib/tinyusb/lib/networking/dnserver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dnserver.c.obj
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.c.obj
-
-pico-sdk/lib/tinyusb/lib/networking/dnserver.i: pico-sdk/lib/tinyusb/lib/networking/dnserver.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.i
-
-# target to preprocess a source file
-pico-sdk/lib/tinyusb/lib/networking/dnserver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dnserver.c.i
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.c.i
-
-pico-sdk/lib/tinyusb/lib/networking/dnserver.s: pico-sdk/lib/tinyusb/lib/networking/dnserver.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.s
-
-# target to generate assembly for a file
-pico-sdk/lib/tinyusb/lib/networking/dnserver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dnserver.c.s
-.PHONY : pico-sdk/lib/tinyusb/lib/networking/dnserver.c.s
 
 pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj: pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj
 .PHONY : pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj
@@ -5264,6 +5105,30 @@ usb_descriptors.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.s
 .PHONY : usb_descriptors.c.s
 
+wifi_code.obj: wifi_code.c.obj
+.PHONY : wifi_code.obj
+
+# target to build an object file
+wifi_code.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.obj
+.PHONY : wifi_code.c.obj
+
+wifi_code.i: wifi_code.c.i
+.PHONY : wifi_code.i
+
+# target to preprocess a source file
+wifi_code.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.i
+.PHONY : wifi_code.c.i
+
+wifi_code.s: wifi_code.c.s
+.PHONY : wifi_code.s
+
+# target to generate assembly for a file
+wifi_code.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/picow-usb-composite-wifi-adapter.dir/build.make CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.s
+.PHONY : wifi_code.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -5286,9 +5151,6 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... msc_disk.obj"
-	@echo "... msc_disk.i"
-	@echo "... msc_disk.s"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
 	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
@@ -5661,21 +5523,12 @@ help:
 	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.obj"
 	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.i"
 	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.s"
-	@echo "... pico-sdk/lib/lwip/src/netif/slipif.obj"
-	@echo "... pico-sdk/lib/lwip/src/netif/slipif.i"
-	@echo "... pico-sdk/lib/lwip/src/netif/slipif.s"
 	@echo "... pico-sdk/lib/lwip/src/netif/zepif.obj"
 	@echo "... pico-sdk/lib/lwip/src/netif/zepif.i"
 	@echo "... pico-sdk/lib/lwip/src/netif/zepif.s"
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
 	@echo "... pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dhserver.obj"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dhserver.i"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dhserver.s"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dnserver.obj"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dnserver.i"
-	@echo "... pico-sdk/lib/tinyusb/lib/networking/dnserver.s"
 	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.obj"
 	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.i"
 	@echo "... pico-sdk/lib/tinyusb/lib/networking/rndis_reports.s"
@@ -5897,6 +5750,9 @@ help:
 	@echo "... usb_descriptors.obj"
 	@echo "... usb_descriptors.i"
 	@echo "... usb_descriptors.s"
+	@echo "... wifi_code.obj"
+	@echo "... wifi_code.i"
+	@echo "... wifi_code.s"
 .PHONY : help
 
 

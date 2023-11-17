@@ -38,9 +38,52 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.obj: ../main.c \
   /usr/include/newlib/sys/_locale.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  ../pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  ../pico-sdk/src/common/pico_base/include/pico.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/assert.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  generated/pico_base/pico/version.h \
+  ../pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  ../pico-sdk/src/boards/include/boards/pico_w.h \
+  ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/error.h \
+  ../pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  ../pico-sdk/src/common/pico_time/include/pico/time.h \
+  ../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  ../pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  ../pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  ../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  ../pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/sync.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  ../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
   ../pico-sdk/lib/tinyusb/src/tusb.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
   ../pico-sdk/lib/tinyusb/src/tusb_option.h \
@@ -54,31 +97,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.obj: ../main.c \
   ../pico-sdk/lib/tinyusb/src/osal/osal.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
   ../pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
-  ../pico-sdk/src/common/pico_time/include/pico/time.h \
-  ../pico-sdk/src/common/pico_base/include/pico.h \
-  ../pico-sdk/src/common/pico_base/include/pico/types.h \
-  ../pico-sdk/src/common/pico_base/include/pico/assert.h \
-  /usr/include/newlib/assert.h \
-  generated/pico_base/pico/version.h \
-  ../pico-sdk/src/common/pico_base/include/pico/config.h \
-  generated/pico_base/pico/config_autogen.h \
-  ../pico-sdk/src/boards/include/boards/pico_w.h \
-  ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
-  ../pico-sdk/src/common/pico_base/include/pico/types.h \
-  ../pico-sdk/src/common/pico_base/include/pico/error.h \
-  ../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
-  ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/sem.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  ../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
   ../pico-sdk/lib/tinyusb/src/osal/osal.h \
   ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
@@ -89,8 +107,8 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.obj: ../main.c \
   ../pico-sdk/lib/tinyusb/src/class/net/net_device.h \
   ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
   ../pico-sdk/lib/tinyusb/src/class/net/ncm.h \
-  ../pico-sdk/lib/tinyusb/lib/networking/dhserver.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
+  ../wifi_code.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/init.h \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
   ../lwipopts.h \
   ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
@@ -100,125 +118,12 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/main.c.obj: ../main.c \
   /usr/include/newlib/sys/_intsup.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
   /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ethernet.h \
-  ../pico-sdk/lib/tinyusb/lib/networking/dnserver.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/init.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/timeouts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ethip6.h \
   ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd.h \
   ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd_opts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/msc_disk.c.obj: ../msc_disk.c \
-  ../pico-sdk/lib/tinyusb/hw/bsp/board_api.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
-  ../pico-sdk/lib/tinyusb/src/tusb.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
-  /usr/include/newlib/stdio.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  ../pico-sdk/lib/tinyusb/src/tusb_option.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
-  ../tusb_config.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_types.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
-  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  ../pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
-  ../pico-sdk/src/common/pico_time/include/pico/time.h \
-  ../pico-sdk/src/common/pico_base/include/pico.h \
-  ../pico-sdk/src/common/pico_base/include/pico/types.h \
-  ../pico-sdk/src/common/pico_base/include/pico/assert.h \
-  /usr/include/newlib/assert.h \
-  generated/pico_base/pico/version.h \
-  ../pico-sdk/src/common/pico_base/include/pico/config.h \
-  generated/pico_base/pico/config_autogen.h \
-  ../pico-sdk/src/boards/include/boards/pico_w.h \
-  ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
-  ../pico-sdk/src/common/pico_base/include/pico/types.h \
-  ../pico-sdk/src/common/pico_base/include/pico/error.h \
-  ../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
-  ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/sem.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  ../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
-  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
-  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
-  ../pico-sdk/lib/tinyusb/src/class/hid/hid.h \
-  ../pico-sdk/lib/tinyusb/src/device/usbd.h \
-  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
-  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
-  ../pico-sdk/lib/tinyusb/src/class/net/net_device.h \
-  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
-  ../pico-sdk/lib/tinyusb/src/class/net/ncm.h
+  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/timeouts.h
 
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: ../pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c \
   /usr/include/newlib/assert.h \
@@ -512,61 +417,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/cyw43-driver/src/cy
   /usr/include/newlib/sys/stdio.h \
   ../pico-sdk/lib/cyw43-driver/src/cyw43_stats.h
 
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/fs.c.obj: ../pico-sdk/lib/lwip/src/apps/http/fs.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd_opts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/apps/fs.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd_opts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/lwip/src/apps/http/fsdata.c
-
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/httpd.c.obj: ../pico-sdk/lib/lwip/src/apps/http/httpd.c \
   ../pico-sdk/lib/lwip/src/include/lwip/init.h \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
@@ -642,933 +492,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/apps/http/
   ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
   ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
   ../pico-sdk/lib/lwip/src/include/lwip/altcp_tcp.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp.c.obj: ../pico-sdk/lib/lwip/src/core/altcp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj: ../pico-sdk/lib/lwip/src/core/altcp_alloc.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj: ../pico-sdk/lib/lwip/src/core/altcp_tcp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/def.c.obj: ../pico-sdk/lib/lwip/src/core/def.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/dns.c.obj: ../pico-sdk/lib/lwip/src/core/dns.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj: ../pico-sdk/lib/lwip/src/core/inet_chksum.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/init.c.obj: ../pico-sdk/lib/lwip/src/core/init.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/init.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/sys.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/sockets.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/raw.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/igmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/dns.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/timeouts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/nd6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mld6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/api.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_impl.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ip.c.obj: ../pico-sdk/lib/lwip/src/core/ip.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/autoip.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/dhcp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/etharp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/snmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/autoip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/acd.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ethernet.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/icmp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/igmp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/ip4.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_frag.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/igmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/autoip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj: ../pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_frag.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/string.h
@@ -1687,18 +610,18 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/memp.
   ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
   ../pico-sdk/lib/lwip/src/include/lwip/err.h \
   ../pico-sdk/lib/lwip/src/include/lwip/raw.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
   ../pico-sdk/lib/lwip/src/include/lwip/def.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
   ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
   ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
   ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
   ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
   ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
   ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
   ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
   ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
   ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
   ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
@@ -1725,90 +648,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/memp.
   ../pico-sdk/lib/lwip/src/include/lwip/priv/nd6_priv.h \
   ../pico-sdk/lib/lwip/src/include/lwip/ip6_frag.h \
   ../pico-sdk/lib/lwip/src/include/lwip/mld6.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/netif.c.obj: ../pico-sdk/lib/lwip/src/core/netif.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/snmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/igmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/sys.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ethernet.h
 
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/pbuf.c.obj: ../pico-sdk/lib/lwip/src/core/pbuf.c \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
@@ -1927,7 +766,32 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/raw.c
   /usr/include/newlib/sys/_intsup.h \
   /usr/include/newlib/sys/_locale.h \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h
+  /usr/include/newlib/ctype.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/raw.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h
 
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/stats.c.obj: ../pico-sdk/lib/lwip/src/core/stats.c \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
@@ -2104,155 +968,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp.c
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/string.h
 
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.obj: ../pico-sdk/lib/lwip/src/core/tcp_in.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/nd6.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.obj: ../pico-sdk/lib/lwip/src/core/tcp_out.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/timeouts.c.obj: ../pico-sdk/lib/lwip/src/core/timeouts.c \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
   ../lwipopts.h \
@@ -2339,82 +1054,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/timeo
   ../pico-sdk/lib/lwip/src/include/lwip/dhcp6.h \
   ../pico-sdk/lib/lwip/src/include/lwip/sys.h
 
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/core/udp.c.obj: ../pico-sdk/lib/lwip/src/core/udp.c \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/icmp6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/icmp6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/snmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h
-
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.obj: ../pico-sdk/lib/lwip/src/netif/ethernet.c \
   ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
   ../lwipopts.h \
@@ -2488,69 +1127,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/ethe
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/string.h \
   ../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/lwip/src/netif/slipif.c.obj: ../pico-sdk/lib/lwip/src/netif/slipif.c \
-  ../pico-sdk/lib/lwip/src/include/netif/slipif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/snmp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/sys.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/sio.h
 
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c \
   ../pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
@@ -2661,160 +1237,6 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/hw/bsp/rp20
   ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
   ../pico-sdk/lib/tinyusb/src/class/net/ncm.h \
   ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dhserver.c.obj: ../pico-sdk/lib/tinyusb/lib/networking/dhserver.c \
-  ../pico-sdk/lib/tinyusb/lib/networking/dhserver.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ethernet.h
-
-CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/dnserver.c.obj: ../pico-sdk/lib/tinyusb/lib/networking/dnserver.c \
-  ../pico-sdk/lib/tinyusb/lib/networking/dnserver.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/types.h \
-  /usr/include/newlib/sys/_stdint.h \
-  /usr/include/newlib/machine/endian.h \
-  /usr/include/newlib/machine/_endian.h \
-  /usr/include/newlib/sys/select.h \
-  /usr/include/newlib/sys/_sigset.h \
-  /usr/include/newlib/sys/_timeval.h \
-  /usr/include/newlib/sys/timespec.h \
-  /usr/include/newlib/sys/_timespec.h \
-  /usr/include/newlib/sys/_pthreadtypes.h \
-  /usr/include/newlib/sys/sched.h \
-  /usr/include/newlib/machine/types.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/string.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
-  ../arch/cc.h \
-  /usr/include/newlib/stdlib.h \
-  /usr/include/newlib/machine/stdlib.h \
-  /usr/include/newlib/alloca.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
-  /usr/include/newlib/ctype.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
-  ../lwipopts.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/udp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/netif.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/def.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/stats.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/mem.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/memp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/ip6.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
-  ../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
-  ../pico-sdk/lib/lwip/src/include/netif/ethernet.h
 
 CMakeFiles/picow-usb-composite-wifi-adapter.dir/pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c.obj: ../pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c \
   /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdalign.h \
@@ -5978,6 +4400,129 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
   ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
   ../pico-sdk/lib/tinyusb/src/class/net/ncm.h
 
+CMakeFiles/picow-usb-composite-wifi-adapter.dir/wifi_code.c.obj: ../wifi_code.c \
+  ../pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
+  ../pico-sdk/src/common/pico_base/include/pico.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  ../pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  ../pico-sdk/src/boards/include/boards/pico_w.h \
+  ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  ../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/types.h \
+  ../pico-sdk/src/common/pico_base/include/pico/error.h \
+  ../pico-sdk/lib/cyw43-driver/src/cyw43.h \
+  ../pico-sdk/lib/cyw43-driver/src/cyw43_config.h \
+  ../pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h \
+  ../pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  ../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  ../pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  ../pico-sdk/src/common/pico_time/include/pico/time.h \
+  ../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /usr/include/newlib/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  ../pico-sdk/lib/cyw43-driver/src/cyw43_ll.h \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/sys/_locale.h \
+  /usr/include/newlib/strings.h \
+  /usr/include/newlib/sys/string.h \
+  ../pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
+  ../pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
+  ../pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
+  ../wifi_code.h \
+  ../pico-sdk/lib/tinyusb/src/tusb.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+  ../pico-sdk/lib/tinyusb/src/tusb_option.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  ../tusb_config.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_types.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  ../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  ../pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+  ../pico-sdk/lib/tinyusb/src/osal/osal.h \
+  ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+  ../pico-sdk/lib/tinyusb/src/class/hid/hid.h \
+  ../pico-sdk/lib/tinyusb/src/device/usbd.h \
+  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
+  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
+  ../pico-sdk/lib/tinyusb/src/class/net/net_device.h \
+  ../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
+  ../pico-sdk/lib/tinyusb/src/class/net/ncm.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/init.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/opt.h \
+  ../lwipopts.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/debug.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/arch.h \
+  ../arch/cc.h \
+  /usr/include/newlib/stdlib.h \
+  /usr/include/newlib/machine/stdlib.h \
+  /usr/include/newlib/alloca.h \
+  /usr/include/newlib/inttypes.h \
+  /usr/include/newlib/sys/_intsup.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+  /usr/include/newlib/ctype.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/apps/httpd_opts.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/err.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+  ../pico-sdk/lib/lwip/src/include/lwip/timeouts.h
+
 
 ../usb_descriptors.c:
 
@@ -5997,6 +4542,8 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
 
 /usr/include/newlib/unistd.h:
 
+/usr/include/newlib/machine/time.h:
+
 ../pico-sdk/src/rp2_common/pico_runtime/runtime.c:
 
 ../pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
@@ -6004,6 +4551,8 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
 ../pico-sdk/src/rp2_common/pico_printf/printf.c:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sysinfo.h:
+
+../pico-sdk/src/rp2_common/pico_platform/platform.c:
 
 ../pico-sdk/src/rp2_common/pico_multicore/multicore.c:
 
@@ -6040,6 +4589,8 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
 ../pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c:
 
 ../pico-sdk/src/rp2_common/pico_cyw43_driver/include/pico/cyw43_driver.h:
+
+../pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c:
 
 ../pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h:
 
@@ -6109,87 +4660,125 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
 
 ../pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h:
 
-../pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
+../pico-sdk/lib/cyw43-driver/src/cyw43_internal.h:
 
-../pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+../pico-sdk/lib/cyw43-driver/src/cyw43_ll.h:
 
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
+../pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h:
 
-../pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
+../pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h:
 
-../pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
-
-../pico-sdk/src/rp2_common/hardware_claim/claim.c:
-
-../pico-sdk/src/common/pico_util/include/pico/util/queue.h:
-
-../pico-sdk/src/common/pico_util/queue.c:
-
-/usr/include/newlib/sys/time.h:
-
-../pico-sdk/src/common/pico_util/pheap.c:
-
-../pico-sdk/src/common/pico_util/include/pico/util/datetime.h:
-
-../pico-sdk/src/common/pico_time/time.c:
-
-../pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
-
-../pico-sdk/src/common/pico_sync/sem.c:
-
-../pico-sdk/src/common/pico_sync/mutex.c:
-
-../pico-sdk/src/common/pico_sync/lock_core.c:
-
-../pico-sdk/lib/tinyusb/src/tusb.c:
-
-../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
-
-../pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
-
-../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
-
-../pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
-
-../pico-sdk/lib/tinyusb/src/device/usbd_control.c:
+../pico-sdk/lib/cyw43-driver/src/cyw43_config.h:
 
 ../pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43.h:
 
-../msc_disk.c:
+../pico-sdk/lib/cyw43-driver/src/cyw43_ll.c:
 
-../pico-sdk/lib/lwip/src/include/lwip/dhcp.h:
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
+
+../pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c:
 
 ../pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h:
 
-../pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
+../pico-sdk/src/rp2_common/pico_standard_link/binary_info.c:
 
-../pico-sdk/lib/lwip/src/include/lwip/init.h:
+../pico-sdk/src/common/pico_sync/sem.c:
 
-../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h:
+../pico-sdk/lib/lwip/src/include/lwip/ip6.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/dhcp.h:
 
 /usr/include/newlib/sys/_intsup.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/sys.h:
 
-../pico-sdk/lib/tinyusb/src/device/dcd.h:
+/usr/include/newlib/inttypes.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h:
+../pico-sdk/lib/lwip/src/include/lwip/debug.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/etharp.h:
+../pico-sdk/lib/lwip/src/include/lwip/acd.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h:
+../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h:
+../pico-sdk/lib/lwip/src/include/lwip/stats.h:
+
+../pico-sdk/lib/lwip/src/core/raw.c:
+
+../pico-sdk/lib/tinyusb/src/tusb.c:
+
+../lwipopts.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/inet_chksum.h:
+
+../wifi_code.h:
+
+../pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
+
+../pico-sdk/lib/tinyusb/src/device/usbd.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
+
+../pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
+
+../pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
+
+../pico-sdk/lib/tinyusb/src/osal/osal.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+
+../pico-sdk/lib/tinyusb/hw/bsp/board_api.h:
+
+../pico-sdk/lib/cyw43-driver/src/cyw43_country.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
+
+../tusb_config.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
+
+../pico-sdk/lib/tinyusb/src/class/net/ncm.h:
+
+../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
+
+../pico-sdk/lib/lwip/src/core/memp.c:
+
+../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
+
+../pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
+
+../pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context_base.h:
+
+../pico-sdk/lib/lwip/src/apps/http/httpd.c:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
+
+../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/err.h:
+
+../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/def.h:
+
+../pico-sdk/src/common/pico_base/include/pico/config.h:
 
 /usr/include/newlib/c++/10.3.1/cstdlib:
 
@@ -6199,167 +4788,11 @@ CMakeFiles/picow-usb-composite-wifi-adapter.dir/usb_descriptors.c.obj: ../usb_de
 
 ../pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
-
-../pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/memp.h:
-
-../pico-sdk/src/common/pico_sync/include/pico/sync.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/mem.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/stats.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/prot/iana.h:
-
-../pico-sdk/lib/lwip/src/core/raw.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/def.h:
-
-../pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/netif.h:
-
-/usr/include/newlib/inttypes.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/debug.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/acd.h:
-
-../lwipopts.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h:
-
-../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
-
-../pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
-
-../pico-sdk/lib/tinyusb/src/device/usbd.h:
-
-/usr/include/newlib/sys/stat.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h:
-
-../pico-sdk/lib/lwip/src/core/init.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/ip4.h:
-
-../pico-sdk/lib/tinyusb/src/device/usbd.c:
-
-../pico-sdk/src/common/pico_base/include/pico.h:
-
-../pico-sdk/lib/cyw43-driver/firmware/w43439A0_7_95_49_00_combined.h:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
-
-../pico-sdk/src/rp2_common/pico_cyw43_driver/include/cyw43_configport.h:
-
-../pico-sdk/src/common/pico_base/include/pico/error.h:
-
-../pico-sdk/src/rp2_common/hardware_pll/pll.c:
-
-../pico-sdk/src/common/pico_base/include/pico/types.h:
-
-/usr/include/newlib/machine/_types.h:
-
-../pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
-
-../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
-
-/usr/include/newlib/strings.h:
+../pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h:
 
 ../pico-sdk/src/common/pico_time/include/pico/time.h:
-
-../pico-sdk/lib/lwip/src/apps/http/fs.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h:
-
-../pico-sdk/lib/tinyusb/src/class/net/net_device.h:
-
-../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
-
-generated/pico_base/pico/version.h:
-
-../pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
-
-../arch/cc.h:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_private.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
-
-/usr/include/newlib/machine/types.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
-
-../pico-sdk/src/common/pico_sync/include/pico/sem.h:
-
-pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
-
-../pico-sdk/src/common/pico_base/include/pico/assert.h:
-
-../pico-sdk/lib/lwip/src/apps/http/httpd_structs.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/dns.h:
-
-../pico-sdk/src/common/pico_time/timeout_helper.c:
-
-../pico-sdk/lib/lwip/src/include/netif/etharp.h:
-
-../pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/dhcp6.h:
-
-../pico-sdk/lib/tinyusb/lib/networking/dhserver.h:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
-
-../pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/udp.h:
-
-../pico-sdk/src/common/pico_base/include/pico/config.h:
-
-../pico-sdk/lib/lwip/src/netif/slipif.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h:
-
-/usr/include/newlib/sys/_pthreadtypes.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
-
-../pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
-
-../pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
-
-/usr/include/newlib/sys/_timespec.h:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_debug.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
-
-../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c:
 
@@ -6367,37 +4800,61 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h:
 
-/usr/include/newlib/sys/_timeval.h:
+../pico-sdk/src/rp2_common/pico_multicore/include/pico/multicore.h:
+
+../arch/cc.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_debug.h:
+
+/usr/include/newlib/sys/_timespec.h:
+
+../pico-sdk/src/rp2_common/hardware_pll/pll.c:
+
+../pico-sdk/src/common/pico_base/include/pico/types.h:
+
+/usr/include/newlib/machine/_types.h:
+
+../pico-sdk/src/common/pico_base/include/pico/error.h:
 
 /usr/include/newlib/string.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_spi.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h:
-
-../pico-sdk/lib/tinyusb/src/class/video/video_device.c:
-
-/usr/include/newlib/machine/stdlib.h:
-
-/usr/include/newlib/sys/_stdint.h:
 
 ../pico-sdk/src/rp2_common/hardware_sync/sync.c:
 
 ../pico-sdk/lib/lwip/src/include/lwip/netdb.h:
 
+/usr/include/newlib/sys/times.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
+
+/usr/include/newlib/sys/_locale.h:
+
+/usr/include/newlib/sys/lock.h:
+
 /usr/include/newlib/sys/select.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/err.h:
+../pico-sdk/lib/lwip/src/include/lwip/arch.h:
 
-/usr/include/newlib/sys/sched.h:
+../pico-sdk/lib/tinyusb/src/common/tusb_types.h:
 
-../pico-sdk/lib/lwip/src/core/tcp_in.c:
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
-../pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
 
-../pico-sdk/lib/tinyusb/lib/networking/dnserver.c:
+../main.c:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
+
+../pico-sdk/lib/tinyusb/src/tusb.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
+
+../pico-sdk/lib/lwip/src/core/timeouts.c:
+
+../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
+
+/usr/include/newlib/stdlib.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdalign.h:
 
 ../pico-sdk/src/rp2_common/hardware_exception/exception.c:
 
@@ -6409,41 +4866,43 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /usr/include/newlib/ctype.h:
 
-../pico-sdk/lib/tinyusb/src/osal/osal.h:
-
 ../pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c:
 
 /usr/include/newlib/sys/config.h:
 
+../pico-sdk/src/common/pico_sync/mutex.c:
+
 /usr/include/newlib/machine/ieeefp.h:
-
-../pico-sdk/lib/lwip/src/core/stats.c:
-
-/usr/include/newlib/sys/_types.h:
 
 ../pico-sdk/src/rp2_common/pico_stdio/stdio.c:
 
 /usr/include/newlib/_ansi.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/sockets.h:
-
 ../pico-sdk/lib/lwip/src/include/lwip/ip6_frag.h:
 
 ../pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c:
 
-/usr/include/newlib/sys/lock.h:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
-/usr/include/newlib/sys/times.h:
+/usr/include/newlib/sys/_sigset.h:
 
-../pico-sdk/lib/tinyusb/src/common/tusb_mcu.h:
-
-/usr/include/newlib/sys/_locale.h:
-
-../pico-sdk/lib/lwip/src/core/def.c:
+../pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
 /usr/include/newlib/newlib.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
+
+../pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/apps/fs.h:
+
+../pico-sdk/src/common/pico_sync/include/pico/mutex.h:
+
+../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
+
+../pico-sdk/lib/cyw43-driver/firmware/wifi_nvram_43439.h:
+
+/usr/include/newlib/sys/_timeval.h:
 
 /usr/include/newlib/sys/string.h:
 
@@ -6451,77 +4910,91 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 ../pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
 
-../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_impl.h:
+../pico-sdk/lib/cyw43-driver/src/cyw43_stats.h:
 
-../main.c:
+../pico-sdk/lib/tinyusb/src/tusb_option.h:
 
-../pico-sdk/lib/tinyusb/src/common/tusb_types.h:
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
+
+/usr/include/newlib/sys/reent.h:
+
+/usr/include/newlib/alloca.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/raw.h:
 
 ../pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
 
 /usr/include/newlib/sys/features.h:
 
-../pico-sdk/lib/lwip/src/include/netif/ethernet.h:
-
 ../pico-sdk/lib/tinyusb/src/common/tusb_common.h:
 
-/usr/include/newlib/alloca.h:
+/usr/include/newlib/sys/_stdint.h:
 
-/usr/include/newlib/sys/reent.h:
+/usr/include/newlib/machine/stdlib.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/raw.h:
+/usr/include/newlib/sys/_types.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h:
+../pico-sdk/lib/lwip/src/core/stats.c:
 
-../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
+../pico-sdk/lib/tinyusb/src/class/net/net_device.h:
 
-../pico-sdk/lib/cyw43-driver/src/cyw43_debug_pins.h:
+../pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/autoip.h:
+/usr/include/newlib/strings.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/opt.h:
+../pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom/sf_table.h:
 
-../pico-sdk/lib/lwip/src/include/netif/slipif.h:
+../pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
+../pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
 
-../pico-sdk/lib/cyw43-driver/src/cyw43_stats.h:
+generated/pico_base/pico/version.h:
 
-../pico-sdk/lib/tinyusb/src/tusb_option.h:
+/usr/include/newlib/sys/_pthreadtypes.h:
 
-../pico-sdk/lib/tinyusb/hw/bsp/board_api.h:
-
-/usr/include/newlib/sys/stdio.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdalign.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/psm.h:
-
-../pico-sdk/lib/tinyusb/src/tusb.h:
+../pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h:
 
 /usr/include/newlib/c++/10.3.1/bits/std_abs.h:
 
-/usr/include/newlib/machine/_default_types.h:
-
 ../pico-sdk/lib/lwip/src/include/lwip/pbuf.h:
 
-../pico-sdk/lib/cyw43-driver/src/cyw43_internal.h:
+/usr/include/newlib/machine/_default_types.h:
 
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/vreg_and_chip_reset.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/ip.h:
+../pico-sdk/src/common/pico_sync/include/pico/sem.h:
 
-/usr/include/newlib/sys/cdefs.h:
+../pico-sdk/src/common/pico_base/include/pico/assert.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h:
+../pico-sdk/lib/lwip/src/apps/http/httpd_structs.h:
 
-../pico-sdk/lib/lwip/src/core/dns.c:
+../pico-sdk/lib/lwip/src/include/lwip/dns.h:
 
-../pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
+../pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h:
 
-../pico-sdk/lib/tinyusb/src/class/midi/midi_device.c:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_compiler.h:
+
+/usr/include/newlib/sys/stdio.h:
+
+../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
+
+../pico-sdk/lib/cyw43-driver/firmware/w43439A0_7_95_49_00_combined.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/ip4.h:
+
+../pico-sdk/src/rp2_common/hardware_flash/include/hardware/flash.h:
+
+../pico-sdk/lib/tinyusb/src/device/usbd_control.c:
+
+/usr/include/newlib/machine/types.h:
+
+../pico-sdk/lib/tinyusb/src/common/tusb_private.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
 /usr/include/newlib/c++/10.3.1/stdlib.h:
 
@@ -6529,109 +5002,83 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /usr/include/newlib/assert.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/sio.h:
-
-../pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/ip6.h:
-
-../tusb_config.h:
-
-../pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_country.h:
-
-../pico-sdk/lib/lwip/src/core/timeouts.c:
-
-../pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
-
-/usr/include/newlib/stdlib.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
-
 generated/pico_base/pico/config_autogen.h:
-
-../pico-sdk/lib/lwip/src/core/ipv4/dhcp.c:
 
 ../pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c:
 
-../pico-sdk/lib/cyw43-driver/src/cyw43_config.h:
+/usr/include/newlib/sys/sched.h:
+
+../pico-sdk/lib/tinyusb/src/class/video/video_device.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/opt.h:
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
 
-../pico-sdk/lib/tinyusb/src/class/hid/hid.h:
-
 ../pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h:
 
-../pico-sdk/lib/lwip/src/core/ipv4/icmp.c:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h:
-
-../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
-
-../pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context_base.h:
-
-../pico-sdk/lib/lwip/src/apps/http/httpd.c:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_ll.c:
-
-../pico-sdk/src/common/pico_sync/include/pico/lock_core.h:
-
-../pico-sdk/src/common/pico_sync/include/pico/mutex.h:
-
-../pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/apps/fs.h:
-
-../pico-sdk/lib/cyw43-driver/src/cyw43_ll.h:
-
-../pico-sdk/lib/cyw43-driver/firmware/wifi_nvram_43439.h:
+../pico-sdk/lib/tinyusb/src/class/hid/hid.h:
 
 ../pico-sdk/lib/cyw43-driver/src/cyw43_stats.c:
 
-/usr/include/newlib/machine/time.h:
+../pico-sdk/lib/lwip/src/include/lwip/memp.h:
 
-../pico-sdk/lib/lwip/src/apps/http/fsdata.c:
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/mpu.h:
+
+../pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
+
+../pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/tcp.h:
 
-../pico-sdk/lib/lwip/src/core/netif.c:
+../pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
-../pico-sdk/lib/lwip/src/core/altcp.c:
+../pico-sdk/src/common/pico_sync/lock_core.c:
 
 ../pico-sdk/lib/lwip/src/include/lwip/tcpbase.h:
 
-../pico-sdk/lib/lwip/src/core/altcp_alloc.c:
+/usr/include/newlib/sys/cdefs.h:
 
-../pico-sdk/lib/lwip/src/core/altcp_tcp.c:
+../pico-sdk/lib/lwip/src/include/lwip/ip.h:
 
-../pico-sdk/lib/lwip/src/core/inet_chksum.c:
+../pico-sdk/lib/lwip/src/include/lwip/ip_addr.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/netif.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/ip.h:
+
+/usr/include/newlib/sys/stat.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h:
+
+../pico-sdk/src/common/pico_util/queue.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/udp.h:
+
+../pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h:
+
+../pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/udp.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/altcp.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/igmp.h:
+../pico-sdk/lib/lwip/src/core/mem.c:
 
-../pico-sdk/lib/lwip/src/include/lwip/nd6.h:
+../pico-sdk/lib/lwip/src/include/lwip/ip4_frag.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/mld6.h:
+/usr/include/newlib/_newlib_version.h:
 
-../pico-sdk/lib/tinyusb/lib/networking/ndis.h:
-
-../pico-sdk/lib/lwip/src/netif/ethernet.c:
-
-../pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
+../pico-sdk/lib/lwip/src/include/lwip/netbuf.h:
 
 /usr/include/newlib/stdio.h:
 
@@ -6639,69 +5086,33 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_qspi.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/icmp.h:
-
-../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h:
-
-../pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c:
-
-../pico-sdk/lib/lwip/src/core/ip.c:
-
-../pico-sdk/lib/lwip/src/core/tcp_out.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h:
-
-../pico-sdk/lib/lwip/src/core/ipv4/autoip.c:
-
-../pico-sdk/lib/lwip/src/core/ipv4/etharp.c:
-
-/usr/include/newlib/machine/_endian.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/snmp.h:
-
-../pico-sdk/lib/lwip/src/include/lwip/ethip6.h:
-
-../pico-sdk/lib/lwip/src/core/ipv4/igmp.c:
-
-../pico-sdk/lib/lwip/src/core/tcp.c:
-
-../pico-sdk/lib/lwip/src/core/mem.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/ip4_frag.h:
-
-../pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
-
-../pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c:
-
-/usr/include/newlib/sys/_sigset.h:
-
-../pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
-
-../pico-sdk/lib/tinyusb/src/class/net/ncm.h:
-
-../pico-sdk/lib/tinyusb/src/class/cdc/cdc.h:
-
-../pico-sdk/lib/lwip/src/core/memp.c:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
-
-/usr/include/newlib/_newlib_version.h:
-
-../pico-sdk/lib/lwip/src/core/ipv4/ip4.c:
-
-../pico-sdk/lib/lwip/src/include/lwip/netbuf.h:
-
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/priv/tcpip_priv.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/priv/api_msg.h:
 
+../pico-sdk/lib/lwip/src/include/lwip/igmp.h:
+
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/psm.h:
 
 /usr/include/newlib/sys/timespec.h:
 
 ../pico-sdk/lib/lwip/src/include/lwip/priv/sockets_priv.h:
+
+../pico-sdk/src/common/pico_base/include/pico.h:
+
+../pico-sdk/lib/tinyusb/src/device/usbd.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/etharp.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/icmp.h:
+
+../pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h:
+
+../wifi_code.c:
 
 ../pico-sdk/src/common/pico_sync/critical_section.c:
 
@@ -6713,6 +5124,14 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/lib/tinyusb/src/common/tusb_fifo.c:
 
+../pico-sdk/lib/lwip/src/include/lwip/mld6.h:
+
+../pico-sdk/lib/tinyusb/lib/networking/ndis.h:
+
+../pico-sdk/lib/lwip/src/netif/ethernet.c:
+
+../pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
+
 ../pico-sdk/lib/lwip/src/include/lwip/timeouts.h:
 
 ../pico-sdk/src/boards/include/boards/pico_w.h:
@@ -6723,19 +5142,21 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ioqspi.h:
 
-../pico-sdk/lib/lwip/src/core/udp.c:
+../pico-sdk/lib/lwip/src/core/tcp.c:
 
-../pico-sdk/lib/lwip/src/include/lwip/arch.h:
+../pico-sdk/lib/lwip/src/include/lwip/nd6.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/icmp6.h:
+../pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
 
-../pico-sdk/src/rp2_common/pico_platform/platform.c:
+../pico-sdk/lib/lwip/src/include/lwip/dhcp6.h:
 
-../pico-sdk/lib/lwip/src/include/lwip/prot/icmp6.h:
+../pico-sdk/lib/lwip/src/include/netif/ethernet.h:
+
+/usr/include/newlib/machine/_endian.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/snmp.h:
 
 ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c:
-
-../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
 
@@ -6745,28 +5166,82 @@ generated/pico_base/pico/config_autogen.h:
 
 ../pico-sdk/lib/tinyusb/hw/bsp/rp2040/board.h:
 
-../pico-sdk/lib/tinyusb/lib/networking/dhserver.c:
-
 ../pico-sdk/lib/tinyusb/lib/networking/rndis_reports.c:
 
 ../pico-sdk/lib/tinyusb/lib/networking/rndis_protocol.h:
 
 ../pico-sdk/lib/tinyusb/src/class/audio/audio_device.c:
 
+../pico-sdk/src/common/pico_time/time.c:
+
 ../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
 
 ../pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c:
-
-../pico-sdk/lib/tinyusb/lib/networking/dnserver.h:
-
-../pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c:
 
 ../pico-sdk/lib/lwip/src/include/lwip/altcp_tcp.h:
 
 ../pico-sdk/lib/tinyusb/src/class/hid/hid_device.c:
 
+../pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
 ../pico-sdk/lib/tinyusb/src/class/msc/msc_device.c:
+
+../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
 
 ../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
 
 ../pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h:
+
+../pico-sdk/lib/tinyusb/src/device/dcd.h:
+
+../pico-sdk/lib/cyw43-driver/src/cyw43_spi.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h:
+
+../pico-sdk/lib/cyw43-driver/src/cyw43_debug_pins.h:
+
+../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
+
+../pico-sdk/src/common/pico_sync/include/pico/sync.h:
+
+../pico-sdk/lib/lwip/src/include/lwip/mem.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/usb.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/usb.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
+
+../pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+../pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
+
+../pico-sdk/src/common/pico_time/timeout_helper.c:
+
+../pico-sdk/lib/lwip/src/include/lwip/init.h:
+
+../pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
+
+../pico-sdk/src/common/pico_util/include/pico/util/datetime.h:
+
+/usr/include/newlib/sys/time.h:
+
+../pico-sdk/src/common/pico_util/pheap.c:
+
+../pico-sdk/src/common/pico_util/include/pico/util/queue.h:
+
+../pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h:
+
+../pico-sdk/src/rp2_common/hardware_claim/claim.c:
+
+../pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
+
+../pico-sdk/src/common/pico_util/include/pico/util/pheap.h:
+
+../pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h:
+
+../pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
